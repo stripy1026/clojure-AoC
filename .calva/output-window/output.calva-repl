@@ -4676,3 +4676,189 @@ clj꞉AoC-2꞉> 
 clj꞉AoC-2꞉> 
 6972
 clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+[true nil]
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+[1 0]
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval10215 (REPL:31).
+; class clojure.lang.MapEntry cannot be cast to class java.lang.Number (clojure.lang.MapEntry is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+[{} #function[clojure.core/char]]
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval10233 (REPL:33).
+; class clojure.lang.MapEntry cannot be cast to class java.lang.Number (clojure.lang.MapEntry is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:28:10).
+; Unable to resolve symbol: reading in this context
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+[1 0]
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+[1 0]
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval10310 (REPL:23).
+; class java.lang.Boolean cannot be cast to class java.lang.Number (java.lang.Boolean and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval10323 (REPL:23).
+; class java.lang.Boolean cannot be cast to class java.lang.Number (java.lang.Boolean and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+[0 28]
+clj꞉AoC-2꞉> 
+(249 28)
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval10426$fn (REPL:19).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval10449$fn (REPL:19).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (NullPointerException) at AoC-2/findfrq$fn (REPL:14).
+; null
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+62250
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 
