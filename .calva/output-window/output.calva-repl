@@ -10,7 +10,7 @@
 ;   - See https://calva.io/connect-sequences/
 ; 
 ; Starting Jack-in Terminal: pushd e:\projects\clojure & java -jar ".calva\deps.clj.jar" -Sdeps "{:deps {nrepl/nrepl {:mvn/version,""1.0.0""},cider/cider-nrepl {:mvn/version,""0.28.5""}}}" -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" & popd
-; Using host:port 127.0.0.1:8536 ...
+; Using host:port 127.0.0.1:12858 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -26,1064 +26,1633 @@ clj꞉user꞉>  ; Use `alt+enter` to evaluate
 clj꞉user꞉> 
 ; Jack-in done.
 clj꞉user꞉> 
-10
-clj꞉main꞉> 
-#'main/inp
-clj꞉main꞉> 
-#function[clojure.core/read-line]
+#'AoC-2/nums
+clj꞉AoC-2꞉> 
+{a 1}
 nil
-clj꞉main꞉> 
-; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
-; For input string: "1 2 3 4"
-clj꞉main꞉> 
-#function[clojure.core/read-line]
-nil
-clj꞉main꞉> 
-#'main/inp
-clj꞉main꞉> 
+clj꞉AoC-2꞉> 
+1
+clj꞉AoC-2꞉> 
 1
 nil
-clj꞉main꞉> 
-["1" "2" "3" "4"]
-clj꞉main꞉> 
-; Syntax error (IllegalArgumentException) compiling . at (e:\projects\clojure\main.clj:5:8).
-; No matching method parstInt found taking 1 args for class java.lang.Integer
-clj꞉main꞉> 
-(1 2 3 4)
-clj꞉main꞉> 
-; Execution error (ArityException) at main/eval7813 (REPL:6).
-; Wrong number of args (1) passed to: clojure.core/reduce
-clj꞉main꞉> 
-10
-clj꞉main꞉> 
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: b in this context
+clj꞉AoC-2꞉> 
 nil
-clj꞉main꞉> 
 nil
-clj꞉main꞉> 
-10
-clj꞉main꞉> 
-3
-clj꞉main꞉> 
-133
-clj꞉main꞉> 
-4
-clj꞉main꞉> 
+clj꞉AoC-2꞉> 
 nil
-clj꞉AoC-1꞉> 
-10
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-; Execution error (IllegalArgumentException) at AoC-1/eval7897 (REPL:10).
-; Don't know how to create ISeq from: AoC_1$read_num
-clj꞉AoC-1꞉> 
-10
-clj꞉AoC-1꞉> 
-; Execution error (IllegalArgumentException) at AoC-1/eval7901 (REPL:10).
-; Don't know how to create ISeq from: AoC_1$read_num
-clj꞉AoC-1꞉> 
-#function[AoC-1/read-num]
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-10
-clj꞉AoC-1꞉> 
-10
-clj꞉AoC-1꞉> 
-(1 2 3 4)
-clj꞉AoC-1꞉> 
-10
-clj꞉AoC-1꞉> 
-(1 2 3 4)
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
-; For input string: "+3,"
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
-; For input string: "+3,"
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-4
-clj꞉AoC-1꞉> 
-(3 3 4 -2 -4)
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-3
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-477
-clj꞉AoC-1꞉> 
-(15 -7 16 5 12 16 -4 10 -1 14 -16 6 4 11 -2 5 4 12 13 5 16 18 -3 -2 9 -10 12 -10 -17 12 -14 -14 11 1 -16 11 -5 20 -1 14 -15 -10 -5 4 -17 -13 -2 -12 -15 12 8 -3 13 17 21 21 8 9 -5 -15 -19 -9 -17 -5 15 12 14 19 -2 15 -6 19 -2 4 -5 -8 -4 10 1 -5 10 12 14 -2 11 -3 -15 -6 14 3 8 10 14 11 18 3 -4 -5 -13 17 -12 -8 -5 7 7 -10 -19 17 1 17 -5 -9 -10 -9 -1 -3 -14 11 1 11 1 2 -17 4 19 17 6 18 -4 3 -13 7 -3 19 5 2 6 12 5 -7 10 16 -9 -16 11 10 2 7 -16 6 16 17 11 11 -14 11 -16 -13 6 8 10 -4 -5 2 5 -18 19 -11 -5 -5 -5 -16 -5 16 7 -10 -20 -14 -18 13 9 -10 18 -7 -8 -4 13 9 18 20 -10 -14 -22 -21 -10 20 -7 -9 1 11 6 12 14 -5 16 13 8 -2 -13 -2 11 21 9 -5 1 18 6 18 -17 3 7 -2 -3 1 7 17 16 4 13 7 17 -18 17 2 19 -11 2 2 1 -16 -19 -4 -17 -8 -5 12 -8 19 3 17 3 3 8 3 -13 12 -7 9 16 15 3 -6 -10 14 -13 -8 4 12 19 17 18 -12 -11 7 -1 -7 -28 -19 -6 2 15 3 -12 -15 5 -15 -8 -16 -17 8 -7 3 6 -18 10 -17 -9 -13 20 -13 -12 -12 9 -2 6 -10 -1 14 -18 -14 2 25 -16 -17 19 8 14 -15 -17 40 21 -19 4 3 -2 9 -2 -3 15 -9 -18 9 7 27 3 8 6 2 -13 4 -16 26 -15 -8 -16 17 -18 33 9 68 8 20 -9 -8 28 15 15 9 12 20 5 16 22 -5 8 14 6 6 10 10 7 -13 -8 10 9 13 -15 -15 13 8 5 25 -10 21 16 10 -16 1 -57 13 -20 -30 2 7 15 -18 -28 -13 1 -9 -6 -2 -13 11 -4 -1 -9 -13 -13 12 -14 12 -13 -7 -2 -15 -2 3 32 13 12 -4 -19 -5 22 -29 -24 -25 -6 -12 -9 3 -15 3 -5 20 -10 -34 -77 -9 -9 -23 -6 8 9 47 -82 -21 38 -61 11 -65 -37 -22 2 12 -26 -20 -4 6 -7 14 6 11 19 -32 10 -74 9 -64 -59 -92 -10 -92 -18 -23 -64754 -2 -16 -6 -19 6 -12 -10 14 9 11 12 15 2 -14 -11 13 -1 -18 -3 19 16 12 14 -19 -11 9 -7 13 20 -1 2 13 10 15 15 13 -15 -7 -10 9 2 7 18 -9 6 -8 4 18 -17 12 14 14 -15 -12 -17 18 -16 6 -13 -23 -5 9 -10 -16 -19 1 12 -18 -9 -1 5 -9 11 1 1 17 -20 5 -17 -13 -9 -18 -11 -19 -13 11 -4 19 -5 9 18 8 -12 -10 -14 17 20 12 15 -22 -12 9 -5 -19 18 19 -8 -23 -18 -1 -4 -16 1 -16 19 -11 -19 -8 -15 -12 -4 -15 10 3 15 -19 11 5 8 -19 3 -18 4 -8 1 5 -13 -20 7 -8 -2 16 13 -8 -12 2 3 13 -9 15 9 -16 -1 -21 8 -17 -6 -2 -18 -10 -6 -13 -19 -1 10 -3 -9 -9 8 2 17 -3 5 -6 -17 13 16 -10 3 12 15 -13 -12 -23 10 16 3 -14 -6 -14 11 13 20 8 -15 19 -10 1 -6 14 13 7 -15 -1 -5 -3 -19 4 7 -13 -12 -19 4 -2 -15 -1 10 -13 -1 -10 7 11 -1 -9 14 -9 -15 14 -7 -15 -16 -14 12 -5 -5 11 -5 7 18 -1 -14 -14 -1 -12 1 1 6 18 -11 -12 -14 -2 1 -3 -20 -8 -8 -3 17 7 4 21 19 -10 6 20 16 -17 7 -11 7 8 -2 20 -14 21 4 3 3 -7 23 -17 -24 5 15 -27 -10 -2 -12 -23 2 -25 -11 19 -30 -17 -15 2 16 8 10 1 -15 -10 9 -18 -17 23 -15 17 6 -19 15 -7 2 -15 21 -24 -15 -4 14 2 18 34 6 8 -19 -6 -12 3 -15 -12 -37 2 9 -22 -31 -5 1 -16 19 10 -19 -22 -14 -6 -18 10 -6 17 18 -19 -15 3 -16 20 10 -19 10 -6 20 19 11 -17 13 -20 -4 20 -18 -12 -8 -18 -18 6 -2 5 -17 -7 -12 -5 -9 11 -9 -11 -12 -4 -4 -1 -2 14 -13 17 -12 -19 23 12 -5 16 15 -9 -12 -11 -17 -17 -6 22 21 12 19 13 22 19 -11 2 -7 8 -12 -18 6 -5 -13 -34 -11 -1 -4 20 63 -4 -14 -24 -20 -31 -90 -8 -9 -21 -16 27 -19 -9 -183 -3 -10 -16 9 -10 11 11 19 32 -2 -3 -81 12 16 5 -1 17 -28 32 22 39 -115 -2 183 108 1 -19 14 3 39 -10 33 14 -161 -885 -63592 -9 -10 3 -4 -4 19 16 20 14 -3 -18 -10 -5 -7 17 -16 5 -4 -18 10 1 18 1 2 -19 -6 -19 -12 -13 -4 20 -7 2 -4 15 -21 -4 -16 -5 17 -10 9 -5 18 21 -6 9 -19 -6 17 -2 -5 24 130793)
+clj꞉AoC-2꞉> 
+; Execution error (NullPointerException) at AoC-2/eval7816 (REPL:6).
+; null
+clj꞉AoC-2꞉> 
+{"a" 2}
+clj꞉AoC-2꞉> 
+; Execution error (NullPointerException) at AoC-2/eval7820 (REPL:7).
+; null
+clj꞉AoC-2꞉> 
+{"a" 2}
+clj꞉AoC-2꞉> 
+; Execution error (NullPointerException) at AoC-2/eval7824 (REPL:7).
+; null
+clj꞉AoC-2꞉> 
+{"a" 1, ["b"] 1}
+clj꞉AoC-2꞉> 
+{"a" 1, "b" 1}
+clj꞉AoC-2꞉> 
+; Execution error (NullPointerException) at AoC-2/eval7830 (REPL:7).
+; null
+clj꞉AoC-2꞉> 
+{"a" #function[clojure.core/inc]}
+clj꞉AoC-2꞉> 
+#'AoC-2/nums
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval7835 (REPL:7).
+; Wrong number of args (0) passed to: clojure.lang.PersistentVector
+clj꞉AoC-2꞉> 
+["s" "t" "r" "i" "n" "g"]
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval7837 (REPL:7).
+; Wrong number of args (0) passed to: clojure.lang.PersistentVector
+clj꞉AoC-2꞉> 
+[s t r s t r]
 nil
-clj꞉AoC-1꞉> 
-#'AoC-1/read-num
-clj꞉AoC-1꞉> 
-4
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:14:1).
-; Unable to resolve symbol: source in this context
-clj꞉AoC-1꞉> 
-(3 3 4 -2 -4)
-clj꞉AoC-1꞉> 
-(3 3 4 -2 -4 3 3 4 -2 -4)
-clj꞉AoC-1꞉> 
-; Execution error (ArityException) at AoC-1/eval7954 (REPL:16).
-; Wrong number of args (0) passed to: clojure.core/some
-clj꞉AoC-1꞉> 
-(3)
-clj꞉AoC-1꞉> 
-(3)
-clj꞉AoC-1꞉> 
-; Execution error (ArityException) at AoC-1/eval7960 (REPL:16).
-; Wrong number of args (1) passed to: clojure.core/reduce
-clj꞉AoC-1꞉> 
-#function[clojure.core/take/fn--5974]
-clj꞉AoC-1꞉> 
-; nREPL connection failed: Error: read ECONNRESET
-; Failed connecting.
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "deps.edn" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; Starting Jack-in Terminal: pushd e:\projects\clojure & java -jar ".calva\deps.clj.jar" -Sdeps "{:deps {nrepl/nrepl {:mvn/version,""1.0.0""},cider/cider-nrepl {:mvn/version,""0.28.5""}}}" -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" & popd
-; Using host:port 127.0.0.1:13760 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; TIPS:
-;   - You can edit the contents here. Use it as a REPL if you like.
-;   - `alt+enter` evaluates the current top level form.
-;   - `ctrl+enter` evaluates the current form.
-;   - `alt+up` and `alt+down` traverse up and down the REPL command history
-;      when the cursor is after the last contents at the prompt
-;   - Clojure lines in stack traces are peekable and clickable.
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+clj꞉AoC-2꞉> 
+s
+; Execution error (ArityException) at AoC-2/eval7841 (REPL:12).
+; Wrong number of args (0) passed to: clojure.lang.PersistentVector
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+s
+; Execution error (ArityException) at AoC-2/eval7843 (REPL:12).
+; Wrong number of args (0) passed to: clojure.lang.PersistentVector
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+; Execution error (IndexOutOfBoundsException) at AoC-2/eval7845 (REPL:11).
+; null
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
 nil
-clj꞉user꞉> 
-clj꞉user꞉> 
-; Jack-in done.
-clj꞉user꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#{:4 :1 :2 :3}
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
 nil
-clj꞉AoC-1꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#{:1 :2 :3}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:9:7).
+; Unable to resolve symbol: contain? in this context
+clj꞉AoC-2꞉> 
 nil
-clj꞉AoC-1꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#{:4 :1 :2 :3}
+clj꞉AoC-2꞉> 
+{}
 nil
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+{}
+{}
+{}
+{}
+{}
+{}
+nil
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
+{}
+clj꞉AoC-2꞉> 
+{}
+nil
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:10:7).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:11:5).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+{}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+{}
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+{}
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
+#'AoC-2/nums
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+{}
+{}
+{}
+{}
+{}
+{}
+nil
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:9:3).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+nil
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval7982 (REPL:11).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval7984 (REPL:11).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+0
+clj꞉AoC-2꞉> 
+{}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:9:14).
+; Unable to resolve symbol: i in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: i in this context
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval7987 (REPL:11).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+6
+clj꞉AoC-2꞉> 
+{}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:11:27).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:11:27).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval7993 (REPL:11).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:11:11).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+{}
+clj꞉AoC-2꞉> 
+()
+clj꞉AoC-2꞉> 
+; Execution error (IndexOutOfBoundsException) at AoC-2/eval7998 (REPL:9).
+; null
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval8000 (REPL:10).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval8002 (REPL:10).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+["s" "t" "r" "s" "t" "r"]
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval8005 (REPL:10).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+nil
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+nil
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+nil
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+nil
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+nil
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+; Execution error (IndexOutOfBoundsException) at AoC-2/eval8018 (REPL:18).
+; null
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+nil
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+; Execution error (IndexOutOfBoundsException) at AoC-2/eval8024 (REPL:18).
+; null
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval8026 (REPL:10).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+s
+t
+r
+s
+t
+r
+; Execution error (IndexOutOfBoundsException) at AoC-2/eval8029 (REPL:18).
+; null
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:19:11).
+; Unable to resolve symbol: i in this context
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
 false
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-#'AoC-1/ls
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-3
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-#'AoC-1/ls
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
+clj꞉AoC-2꞉> 
 true
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-true
-clj꞉AoC-1꞉> 
+clj꞉AoC-2꞉> 
 nil
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-true
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-:3
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-:2
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:16:1).
-; Unable to resolve symbol: dex in this context
-clj꞉AoC-1꞉> 
-#'AoC-1/a
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-#'AoC-1/a
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-true
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#'AoC-1/a
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-#'AoC-1/ls
-clj꞉AoC-1꞉> 
-false
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-3
-clj꞉AoC-1꞉> 
-true
-clj꞉AoC-1꞉> 
-3
-clj꞉AoC-1꞉> 
-; Syntax error reading source at (REPL:25:39).
-; Duplicate key: true
-clj꞉AoC-1꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#'AoC-1/a
-clj꞉AoC-1꞉> 
-#'AoC-1/x
-clj꞉AoC-1꞉> 
-true
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-#'AoC-1/my-map
-clj꞉AoC-1꞉> 
-true
-clj꞉AoC-1꞉> 
-#{1 3 2}
-clj꞉AoC-1꞉> 
-#{1 3 2}
-clj꞉AoC-1꞉> 
-#'AoC-1/a
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-clj꞉AoC-1꞉> 
-#'AoC-1/set2
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-nil
-clj꞉AoC-1꞉> 
-#'AoC-1/set3
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-nil
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-nil
-clj꞉AoC-1꞉> 
-#{1 4 3 2}
-nil
-clj꞉AoC-1꞉> 
-#'AoC-1/my-set
-clj꞉AoC-1꞉> 
-#{}
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:19:25).
-; Unable to resolve symbol: read-num in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:19:33).
-; Unable to resolve symbol: read-num in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:18:31).
-; Unable to resolve symbol: read-num in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:17:31).
-; Unable to resolve symbol: read-num in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:14:16).
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval8040 (REPL:10).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+{"s" 2, "t" 2, "r" 1}
+clj꞉AoC-2꞉> 
+{"s" 2, "t" 2, "r" 1}
+clj꞉AoC-2꞉> 
+; Execution error (IndexOutOfBoundsException) at AoC-2/eval8049 (REPL:9).
+; null
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:9:9).
+; Unable to resolve symbol: item in this context
+clj꞉AoC-2꞉> 
+{"s" 2, "t" 2, "r" 2}
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+["b" "a" "b" "a" "b" "c"]
+clj꞉AoC-2꞉> 
+{"b" 3, "a" 2, "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/findcnt
+clj꞉AoC-2꞉> 
+{"b" 3, "a" 2, "c" 1}
+clj꞉AoC-2꞉> 
+{"b" 3, "a" 2, "c" 1}
+clj꞉AoC-2꞉> 
+{"b" 3, "a" 2, "c" 1}
+clj꞉AoC-2꞉> 
+(3 2 1)
+clj꞉AoC-2꞉> 
+(3 2 1)
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+; Error printing return value (IndexOutOfBoundsException) at clojure.lang.AMapEntry/nth (AMapEntry.java:25).
+; null
+clj꞉AoC-2꞉> 
+; Error printing return value (IndexOutOfBoundsException) at clojure.lang.AMapEntry/nth (AMapEntry.java:25).
+; null
+clj꞉AoC-2꞉> 
+([3 1])
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval8120 (REPL:17).
+; Wrong number of args (0) passed to: clojure.core/frequencies
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval8122 (REPL:16).
+; Wrong number of args (0) passed to: clojure.core/vals
+clj꞉AoC-2꞉> 
+{"b" 3, "a" 2, "c" 1}
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval8126 (REPL:16).
+; Wrong number of args (0) passed to: clojure.core/vals
+clj꞉AoC-2꞉> 
+([3 1])
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval8140 (REPL:16).
+; Wrong number of args (0) passed to: clojure.core/vals
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval8142 (REPL:17).
+; Wrong number of args (0) passed to: clojure.core/frequencies
+clj꞉AoC-2꞉> 
+["b" "a" "b" "a" "b" "c"]
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+([3 1] [2 1])
+clj꞉AoC-2꞉> 
+(1 1)
+clj꞉AoC-2꞉> 
+1
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+["a" "b" "a" "b" "a" "b"]
+clj꞉AoC-2꞉> 
+2
+clj꞉AoC-2꞉> 
+#function[clojure.core/filter/fn--5958]
+clj꞉AoC-2꞉> 
+#function[AoC-2/eval8223/fn--8225]
+clj꞉AoC-2꞉> 
+#function[clojure.core/map/fn--5931]
+clj꞉AoC-2꞉> 
+(2)
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+(1 1)
+clj꞉AoC-2꞉> 
+([3 1] [2 1])
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:14:18).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:10:3).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval8291 (REPL:20).
+; Wrong number of args (0) passed to: clojure.core/vals
+clj꞉AoC-2꞉> 
+1
+clj꞉AoC-2꞉> 
+["b" "a" "b" "a" "b" "c"]
+clj꞉AoC-2꞉> 
+#function[clojure.core/map/fn--5931]
+clj꞉AoC-2꞉> 
+1
+clj꞉AoC-2꞉> 
+(1 1)
+clj꞉AoC-2꞉> 
+#function[clojure.core/filter/fn--5958]
+clj꞉AoC-2꞉> 
+([3 1] [2 1])
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:0:0).
 ; Unable to resolve symbol: read-num in this context
 clj꞉AoC-1꞉> 
 ; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:10:1).
 ; Unable to resolve symbol: read-num in this context
 clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:0:0).
-; Unable to resolve symbol: read-num in this context
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "+15
+; -7
+; +16
+; +5
+; +12
+; +16
+; -4
+; +10
+; -1
+; +14
+; -16
+; +6
+; +4
+; +11
+; -2
+; +5
+; +4
+; +12
+; +13
+; +5
+; +16
+; +18
+; -3
+; -2
+; +9
+; -10
+; +12
+; -10
+; -17
+; +12
+; -14
+; -14
+; +11
+; +1
+; -16
+; +11
+; -5
+; +20
+; -1
+; +14
+; -15
+; -10
+; -5
+; +4
+; -17
+; -13
+; -2
+; -12
+; -15
+; +12
+; +8
+; -3
+; +13
+; +17
+; +21
+; +21
+; +8
+; +9
+; -5
+; -15
+; -19
+; -9
+; -17
+; -5
+; +15
+; +12
+; +14
+; +19
+; -2
+; +15
+; -6
+; +19
+; -2
+; +4
+; -5
+; -8
+; -4
+; +10
+; +1
+; -5
+; +10
+; +12
+; +14
+; -2
+; +11
+; -3
+; -15
+; -6
+; +14
+; +3
+; +8
+; +10
+; +14
+; +11
+; +18
+; +3
+; -4
+; -5
+; -13
+; +17
+; -12
+; -8
+; -5
+; +7
+; +7
+; -10
+; -19
+; +17
+; +1
+; +17
+; -5
+; -9
+; -10
+; -9
+; -1
+; -3
+; -14
+; +11
+; +1
+; +11
+; +1
+; +2
+; -17
+; +4
+; +19
+; +17
+; +6
+; +18
+; -4
+; +3
+; -13
+; +7
+; -3
+; +19
+; +5
+; +2
+; +6
+; +12
+; +5
+; -7
+; +10
+; +16
+; -9
+; -16
+; +11
+; +10
+; +2
+; +7
+; -16
+; +6
+; +16
+; +17
+; +11
+; +11
+; -14
+; +11
+; -16
+; -13
+; +6
+; +8
+; +10
+; -4
+; -5
+; +2
+; +5
+; -18
+; +19
+; -11
+; -5
+; -5
+; -5
+; -16
+; -5
+; +16
+; +7
+; -10
+; -20
+; -14
+; -18
+; +13
+; +9
+; -10
+; +18
+; -7
+; -8
+; -4
+; +13
+; +9
+; +18
+; +20
+; -10
+; -14
+; -22
+; -21
+; 
+; -10
+; +20
+; -7
+; -9
+; +1
+; +11
+; +6
+; +12
+; +14
+; -5
+; +16
+; +13
+; +8
+; -2
+; -13
+; -2
+; +11
+; +21
+; +9
+; -5
+; +1
+; +18
+; +6
+; +18
+; -17
+; +3
+; +7
+; -2
+; -3
+; +1
+; +7
+; +17
+; +16
+; +4
+; +13
+; +7
+; +17
+; -18
+; +17
+; +2
+; +19
+; -11
+; +2
+; +2
+; +1
+; -16
+; -19
+; -4
+; -17
+; -8
+; -5
+; +12
+; -8
+; +19
+; +3
+; +17
+; +3
+; +3
+; +8
+; +3
+; -13
+; +12
+; -7
+; +9
+; +16
+; +15
+; +3
+; -6
+; -10
+; +14
+; -13
+; -8
+; +4
+; +12
+; +19
+; +17
+; +18
+; -12
+; -11
+; +7
+; -1
+; -7
+; -28
+; -19
+; -6
+; +2
+; +15
+; +3
+; -12
+; -15
+; +5
+; -15
+; -8
+; -16
+; -17
+; +8
+; -7
+; +3
+; +6
+; -18
+; +10
+; -17
+; -9
+; -13
+; +20
+; -13
+; -12
+; -12
+; +9
+; -2
+; +6
+; -10
+; -1
+; +14
+; -18
+; -14
+; +2
+; +25
+; -16
+; -17
+; +19
+; +8
+; +14
+; -15
+; -17
+; +40
+; +21
+; -19
+; +4
+; +3
+; -2
+; +9
+; -2
+; -3
+; +15
+; -9
+; -18
+; +9
+; +7
+; +27
+; +3
+; +8
+; +6
+; +2
+; -13
+; +4
+; -16
+; +26
+; -15
+; -8
+; -16
+; +17
+; -18
+; +33
+; +9
+; +68
+; +8
+; +20
+; -9
+; -8
+; +28
+; +15
+; +15
+; +9
+; +12
+; +20
+; +5
+; +16
+; +22
+; -5
+; +8
+; +14
+; +6
+; +6
+; +10
+; +10
+; +7
+; -13
+; -8
+; +10
+; +9
+; +13
+; -15
+; -15
+; +13
+; +8
+; +5
+; +25
+; -10
+; +21
+; +16
+; +10
+; -16
+; +1
+; -57
+; +13
+; -20
+; -30
+; +2
+; +7
+; +15
+; -18
+; -28
+; -13
+; +1
+; -9
+; -6
+; -2
+; -13
+; +11
+; -4
+; -1
+; -9
+; -13
+; -13
+; +12
+; -14
+; +12
+; -13
+; -7
+; -2
+; -15
+; -2
+; +3
+; +32
+; 
+; +13
+; +12
+; -4
+; -19
+; -5
+; +22
+; -29
+; -24
+; -25
+; -6
+; -12
+; -9
+; +3
+; -15
+; +3
+; -5
+; +20
+; -10
+; -34
+; -77
+; -9
+; -9
+; -23
+; -6
+; +8
+; +9
+; +47
+; -82
+; -21
+; +38
+; -61
+; +11
+; -65
+; -37
+; -22
+; +2
+; +12
+; -26
+; -20
+; -4
+; +6
+; -7
+; +14
+; +6
+; +11
+; +19
+; -32
+; +10
+; -74
+; +9
+; -64
+; -59
+; -92
+; -10
+; -92
+; -18
+; -23
+; -64754
+; -2
+; -16
+; -6
+; -19
+; +6
+; -12
+; -10
+; +14
+; +9
+; +11
+; +12
+; +15
+; +2
+; -14
+; -11
+; +13
+; -1
+; -18
+; -3
+; +19
+; +16
+; +12
+; +14
+; -19
+; -11
+; +9
+; -7
+; +13
+; +20
+; -1
+; +2
+; +13
+; +10
+; +15
+; +15
+; +13
+; -15
+; -7
+; -10
+; +9
+; +2
+; +7
+; +18
+; -9
+; +6
+; -8
+; +4
+; +18
+; -17
+; +12
+; +14
+; +14
+; -15
+; -12
+; -17
+; +18
+; -16
+; +6
+; -13
+; -23
+; -5
+; +9
+; -10
+; -16
+; -19
+; +1
+; +12
+; -18
+; -9
+; -1
+; +5
+; -9
+; +11
+; +1
+; +1
+; +17
+; -20
+; +5
+; -17
+; -13
+; -9
+; -18
+; -11
+; -19
+; -13
+; +11
+; -4
+; +19
+; -5
+; +9
+; +18
+; +8
+; -12
+; -10
+; -14
+; +17
+; +20
+; +12
+; +15
+; -22
+; -12
+; +9
+; -5
+; -19
+; +18
+; +19
+; -8
+; -23
+; -18
+; -1
+; -4
+; -16
+; +1
+; -16
+; +19
+; -11
+; -19
+; -8
+; -15
+; -12
+; -4
+; -15
+; +10
+; +3
+; +15
+; -19
+; +11
+; +5
+; +8
+; -19
+; +3
+; -18
+; +4
+; -8
+; +1
+; +5
+; -13
+; -20
+; +7
+; -8
+; -2
+; +16
+; +13
+; -8
+; -12
+; +2
+; +3
+; +13
+; -9
+; +15
+; +9
+; -16
+; -1
+; -21
+; +8
+; -17
+; -6
+; -2
+; -18
+; -10
+; -6
+; -13
+; -1
+; 9
+; -1
+; +10
+; -3
+; -9
+; -9
+; +8
+; +2
+; +17
+; -3
+; +5
+; -6
+; -17
+; +13
+; +16
+; -10
+; +3
+; +12
+; +15
+; -13
+; -12
+; -23
+; +10
+; +16
+; +3
+; -14
+; -6
+; -14
+; +11
+; +13
+; +20
+; +8
+; -15
+; +19
+; -10
+; +1
+; -6
+; +14
+; +13
+; +7
+; -15
+; -1
+; -5
+; -3
+; -19
+; +4
+; +7
+; -13
+; -12
+; -19
+; +4
+; -2
+; -15
+; -1
+; +10
+; -13
+; -1
+; -10
+; +7
+; +11
+; -1
+; -9
+; +14
+; -9
+; -15
+; +14
+; -7
+; -15
+; -16
+; -14
+; +12
+; -5
+; -5
+; +11
+; -5
+; +7
+; +18
+; -1
+; -14
+; -14
+; -1
+; -12
+; +1
+; +1
+; +6
+; +18
+; -11
+; -12
+; -14
+; -2
+; +1
+; -3
+; -20
+; -8
+; -8
+; -3
+; +17
+; +7
+; +4
+; +21
+; +19
+; -10
+; +6
+; +20
+; +16
+; -17
+; +7
+; -11
+; +7
+; +8
+; -2
+; +20
+; -14
+; +21
+; +4
+; +3
+; +3
+; -7
+; +23
+; -17
+; -24
+; +5
+; +15
+; -27
+; -10
+; -2
+; -12
+; -23
+; +2
+; -25
+; -11
+; +19
+; -30
+; -17
+; -15
+; +2
+; +16
+; +8
+; +10
+; +1
+; -15
+; -10
+; +9
+; -18
+; -17
+; +23
+; -15
+; +17
+; +6
+; -19
+; +15
+; -7
+; +2
+; -15
+; +21
+; -24
+; -15
+; -4
+; +14
+; +2
+; +18
+; +34
+; +6
+; +8
+; -19
+; -6
+; -12
+; +3
+; -15
+; -12
+; -37
+; +2
+; +9
+; -22
+; -31
+; -5
+; +1
+; -16
+; +19
+; +10
+; -19
+; -22
+; -14
+; -6
+; -18
+; +10
+; -6
+; +17
+; +18
+; -19
+; -15
+; +3
+; -16
+; +20
+; +10
+; -19
+; +10
+; -6
+; +20
+; +19
+; +11
+; -17
+; +13
+; -20
+; -4
+; +20
+; -18
+; -12
+; -8
+; -18
+; -18
+; +6
+; -2
+; +5
+; -17
+; -7
+; -12
+; -5
+; -9
+; +11
+; -9
+; -11
+; -12
+; 
+; -4
+; -4
+; -1
+; -2
+; +14
+; -13
+; +17
+; -12
+; -19
+; +23
+; +12
+; -5
+; +16
+; +15
+; -9
+; -12
+; -11
+; -17
+; -17
+; -6
+; +22
+; +21
+; +12
+; +19
+; +13
+; +22
+; +19
+; -11
+; +2
+; -7
+; +8
+; -12
+; -18
+; +6
+; -5
+; -13
+; -34
+; -11
+; -1
+; -4
+; +20
+; +63
+; -4
+; -14
+; -24
+; -20
+; -31
+; -90
+; -8
+; -9
+; -21
+; -16
+; +27
+; -19
+; -9
+; -183
+; -3
+; -10
+; -16
+; +9
+; -10
+; +11
+; +11
+; +19
+; +32
+; -2
+; -3
+; -81
+; +12
+; +16
+; +5
+; -1
+; +17
+; -28
+; +32
+; +22
+; +39
+; -115
+; -2
+; +183
+; +108
+; +1
+; -19
+; +14
+; +3
+; +39
+; -10
+; +33
+; +14
+; -161
+; -885
+; -63592
+; -9
+; -10
+; +3
+; -4
+; -4
+; +19
+; +16
+; +20
+; +14
+; -3
+; -18
+; -10
+; -5
+; -7
+; +17
+; -16
+; +5
+; -4
+; -18
+; +10
+; +1
+; +18
+; +1
+; +2
+; -19
+; -6
+; -19
+; -12
+; -13
+; -4
+; +20
+; -7
+; +2
+; -4
+; +15
+; -21
+; -4
+; -16
+; -5
+; +17
+; -10
+; +9
+; -5
+; +18
+; +21
+; -6
+; +9
+; -19
+; -6
+; +17
+; -2
+; -5
+; +24
+; +130793"
 clj꞉AoC-1꞉> 
 #'AoC-1/read-num
 clj꞉AoC-1꞉> 
-4
-clj꞉AoC-1꞉> 
-#'AoC-1/num-cycle
-clj꞉AoC-1꞉> 
-#'AoC-1/num-cycle
-clj꞉AoC-1꞉> 
-; Execution error (ArityException) at AoC-1/eval7918 (REPL:18).
-; Wrong number of args (0) passed to: clojure.lang.PersistentHashSet
-clj꞉AoC-1꞉> 
-#'AoC-1/num-cycle
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7920 (REPL:17).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-#'AoC-1/num-cycle
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7922 (REPL:17).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-#'AoC-1/nums
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:19:16).
-; Unable to resolve symbol: num-cycle-iter in this context
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7925 (REPL:17).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-#'AoC-1/num-cycle
-clj꞉AoC-1꞉> 
-#'AoC-1/nums
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7927 (REPL:17).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7929 (REPL:17).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-#'AoC-1/num-cycle
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7931 (REPL:17).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-#'AoC-1/num-seq
-clj꞉AoC-1꞉> 
-((3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  ...)
- (3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  ...)
- (4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  ...)
- (-2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  ...)
- (-4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  ...)
- (3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  ...)
- (3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  ...)
- (4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  ...)
- (-2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  ...)
- (-4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  ...))
-clj꞉AoC-1꞉> 
-((3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  3
-  3
-  4
-  -2
-  -4
-  ...))
-clj꞉AoC-1꞉> 
-(3)
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7939 (REPL:18).
-; class clojure.lang.Cycle cannot be cast to class clojure.lang.IFn (clojure.lang.Cycle and clojure.lang.IFn are in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-; Execution error (IllegalArgumentException) at AoC-1/eval7941 (REPL:20).
-; Don't know how to create ISeq from: java.lang.Integer
-clj꞉AoC-1꞉> 
-3
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:0:0).
-; Unable to resolve symbol: i in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:20:31).
-; Unable to resolve symbol: num-cycle-iter in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:20:55).
-; Unable to resolve symbol: num-cycle-iter in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:20:12).
-; Unable to resolve symbol: i in this context
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:19:9).
-; Unable to resolve symbol: i in this context
-clj꞉AoC-1꞉> 
-nil
-clj꞉AoC-1꞉> 
-; Syntax error (UnsupportedOperationException) compiling recur at (e:\projects\clojure\AoC-1.clj:20:5).
-; Can only recur from tail position
-clj꞉AoC-1꞉> 
-#{-4 -2 4 3}
-clj꞉AoC-1꞉> 
-#{-4 -2 4 3}
-clj꞉AoC-1꞉> 
-#{4 3}
-clj꞉AoC-1꞉> 
-#{-4 -2 4 3}
-clj꞉AoC-1꞉> 
-#{-4 -2 4 3}
-clj꞉AoC-1꞉> 
-; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:19:23).
-; Unable to resolve symbol: num-cycle-iter in this context
-clj꞉AoC-1꞉> 
-#{}
-clj꞉AoC-1꞉> 
-#{3}
-clj꞉AoC-1꞉> 
-#{-2 4 3}
-clj꞉AoC-1꞉> 
-8
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7972 (REPL:21).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-; Execution error (ClassCastException) at AoC-1/eval7974 (REPL:21).
-; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
-clj꞉AoC-1꞉> 
-4
-clj꞉AoC-1꞉> 
-(3 3 4 -2 -4)
-clj꞉AoC-1꞉> 
-4
-clj꞉AoC-1꞉> 
-8
-clj꞉AoC-1꞉> 
-4
-nil
-clj꞉AoC-1꞉> 
-3
-6
-10
-8
-4
-8
-clj꞉AoC-1꞉> 
-3
-6
-10
-8
-4
-8
-clj꞉AoC-1꞉> 
-(3 3 4 -2 -4)
-clj꞉AoC-1꞉> 
-3
-6
-10
-8
-4
-4
-clj꞉AoC-1꞉> 
-3
-6
-10
-8
-4
-7
-10
-10
-clj꞉AoC-1꞉> 
-10
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "+15
+"
 clj꞉AoC-1꞉> 
 #'AoC-1/read-num
 clj꞉AoC-1꞉> 
-10
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "15
+"
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "2
+"
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "15
+"
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (ClassCastException) at AoC-1/eval8449 (REPL:10).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (ClassCastException) at AoC-1/fn (REPL:8).
+; class clojure.string$replace cannot be cast to class java.lang.CharSequence (clojure.string$replace is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (ClassCastException) at AoC-1/fn (REPL:8).
+; class clojure.string$replace cannot be cast to class java.lang.CharSequence (clojure.string$replace is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "15
+"
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "15
+"
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "15
+"
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (ClassCastException) at AoC-1/eval8509 (REPL:10).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉AoC-1꞉> 
+["+15\r"
+ "-7\r"
+ "+16\r"
+ "+5\r"
+ "+12\r"
+ "+16\r"
+ "-4\r"
+ "+10\r"
+ "-1\r"
+ "+14\r"
+ "-16\r"
+ "+6\r"
+ "+4\r"
+ "+11\r"
+ "-2\r"
+ "+5\r"
+ "+4\r"
+ "+12\r"
+ "+13\r"
+ "+5\r"
+ "+16\r"
+ "+18\r"
+ "-3\r"
+ "-2\r"
+ "+9\r"
+ "-10\r"
+ "+12\r"
+ "-10\r"
+ "-17\r"
+ "+12\r"
+ "-14\r"
+ "-14\r"
+ "+11\r"
+ "+1\r"
+ "-16\r"
+ "+11\r"
+ "-5\r"
+ "+20\r"
+ "-1\r"
+ "+14\r"
+ "-15\r"
+ "-10\r"
+ "-5\r"
+ "+4\r"
+ "-17\r"
+ "-13\r"
+ "-2\r"
+ "-12\r"
+ "-15\r"
+ "+12\r"
+ ...]
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "
+; -7"
+clj꞉AoC-1꞉> 
+#'AoC-1/read-num
+clj꞉AoC-1꞉> 
+; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "
+; -7"
+clj꞉AoC-1꞉> 
+; Error printing return value (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "
+; -7"
+clj꞉AoC-1꞉> 
+; Error printing return value (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "
+; -7"
+clj꞉AoC-1꞉> 
+()
+clj꞉AoC-1꞉> 
+; Error printing return value (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:65).
+; For input string: "
+; -7"
 clj꞉AoC-1꞉> 
 (15
  -7
@@ -1137,15 +1706,2973 @@ clj꞉AoC-1꞉> 
  12
  ...)
 clj꞉AoC-1꞉> 
+0
+clj꞉AoC-1꞉> 
+()
+clj꞉AoC-1꞉> 
+(2 3 4)
+clj꞉AoC-1꞉> 
+0
+clj꞉AoC-1꞉> 
 #'AoC-1/read-num
+clj꞉AoC-1꞉> 
+9
 clj꞉AoC-1꞉> 
 #'AoC-1/read-num
 clj꞉AoC-1꞉> 
 477
 clj꞉AoC-1꞉> 
-#'AoC-1/num-cycle
+; Syntax error compiling at (e:\projects\clojure\AoC-1.clj:14:1).
+; Unable to resolve symbol: num-cycle in this context
 clj꞉AoC-1꞉> 
-0
+#'AoC-1/num-cycle
 clj꞉AoC-1꞉> 
 390
 clj꞉AoC-1꞉> 
+["auxwcbzrmdvpsjfgkrthnkioqm"
+ "auxwcbzrmdvpsjfgbltonyijqe"
+ "auxwcbzrmdfpsefgklthnoioqe"
+ "auxwcbzrmdvpsjfgkluhnjisqe"
+ "auxwcbzrmdvesjfgdzthnyioqe"
+ "auxwcbzrmdvhsjfgklthnmijqe"
+ "auxwcbzridvpsjfgkltxeyioqe"
+ "ayxwcbzrgdvpsjfgklthiyioqe"
+ "ajxwcbzrmdvpsjfgklkhnyiode"
+ "auxwcbcrmdvpsjfqelthnyioqe"
+ "auxwcbzrmsvpsjsgklthnyiope"
+ "auxwcbzrmqvpsjzgklghnyioqe"
+ "auxwcbzrmdvpsjtqklthxyioqe"
+ "auxwcbzrmdopsjfdklthncioqe"
+ "auxwcbzrmdvpsjfgkltmhyfoqe"
+ "aixwcbzrmdvpsjfgllthdyeoqe"
+ "vuxicbzrmdepsjfgklthnyioqe"
+ "auxwcbbxmdkpsjfgklthnyioqe"
+ "auxwcbzrgdvpsofaklthnyioqe"
+ "auxycbzrmdvpsjfgklthnyuose"
+ "aujwcbzrmdvprjfgkltcnyioqe"
+ "auxwgbzrmdvpsjfgyzthnyioqe"
+ "auxwcbzrmavpsjfgkltsnyiome"
+ "auxwcbgrmdvpsjfgkdthnrioqe"
+ "kuxwcbzrmdvpsyfgklthnyioue"
+ "auxwcbzomdvpjdfgklthnyioqe"
+ "auxwcbzrmdppsjfgklthvyifqe"
+ "aunwubzrmdvpsjrgklthnyioqe"
+ "auxwcbzrmoipsjfgklbhnyioqe"
+ "auxwdbzrmdvpsjfgmlthnyioce"
+ "auxwcbzjmsvpsjfiklthnyioqe"
+ "auxwcbzrmwcpsjfcklthnyioqe"
+ "auxwcbzfmdvprjfhklthnyioqe"
+ "auxdcbzrgdvpsjfgklthnyxoqe"
+ "wuxwbbzrmdvpsjfgklthnyiote"
+ "auowcbjrmdvpsjfgklthnyfoqe"
+ "auxwsbzrmdvpsjfglltcnyioqe"
+ "quxwcbzrmdvpkjfgklthnyioqt"
+ "vuxwcbzrudvpsjfgklthnyioqi"
+ "puxwcbzrmdvgsjfgklthncioqe"
+ "luxdcbzrmdvpsjfgkothnyioqe"
+ "auxwcbzrmdvpsjfyklthfhioqe"
+ "auxwcbqrmdvpsjfgkldhnyiote"
+ "quxwcbzrmlvpsjfgklthnyioqi"
+ "auxwcbzgmdvpsjfoklthnyiuqe"
+ "auxwcbzrmdvpsbfgkltdjyioqe"
+ "auxwcbzsmdrpsjfgklthpyioqe"
+ "auxwcbzrmfvpsjfwklthnyiote"
+ "auxbkpzrmdvpsjfgklthnyioqe"
+ "auxwcbzrddvpsjfsklthnyroqe"
+ ...]
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+{1 1}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:22:3).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+{3 1, 2 1, 1 1}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+["b" "a" "b" "a" "b" "c"]
+clj꞉AoC-2꞉> 
+["b" "a" "b" "a" "b" "c"]
+clj꞉AoC-2꞉> 
+["auxwcbzrmdvpsjfgkrthnkioqm"
+ "auxwcbzrmdvpsjfgbltonyijqe"
+ "auxwcbzrmdfpsefgklthnoioqe"
+ "auxwcbzrmdvpsjfgkluhnjisqe"
+ "auxwcbzrmdvesjfgdzthnyioqe"
+ "auxwcbzrmdvhsjfgklthnmijqe"
+ "auxwcbzridvpsjfgkltxeyioqe"
+ "ayxwcbzrgdvpsjfgklthiyioqe"
+ "ajxwcbzrmdvpsjfgklkhnyiode"
+ "auxwcbcrmdvpsjfqelthnyioqe"
+ "auxwcbzrmsvpsjsgklthnyiope"
+ "auxwcbzrmqvpsjzgklghnyioqe"
+ "auxwcbzrmdvpsjtqklthxyioqe"
+ "auxwcbzrmdopsjfdklthncioqe"
+ "auxwcbzrmdvpsjfgkltmhyfoqe"
+ "aixwcbzrmdvpsjfgllthdyeoqe"
+ "vuxicbzrmdepsjfgklthnyioqe"
+ "auxwcbbxmdkpsjfgklthnyioqe"
+ "auxwcbzrgdvpsofaklthnyioqe"
+ "auxycbzrmdvpsjfgklthnyuose"
+ "aujwcbzrmdvprjfgkltcnyioqe"
+ "auxwgbzrmdvpsjfgyzthnyioqe"
+ "auxwcbzrmavpsjfgkltsnyiome"
+ "auxwcbgrmdvpsjfgkdthnrioqe"
+ "kuxwcbzrmdvpsyfgklthnyioue"
+ "auxwcbzomdvpjdfgklthnyioqe"
+ "auxwcbzrmdppsjfgklthvyifqe"
+ "aunwubzrmdvpsjrgklthnyioqe"
+ "auxwcbzrmoipsjfgklbhnyioqe"
+ "auxwdbzrmdvpsjfgmlthnyioce"
+ "auxwcbzjmsvpsjfiklthnyioqe"
+ "auxwcbzrmwcpsjfcklthnyioqe"
+ "auxwcbzfmdvprjfhklthnyioqe"
+ "auxdcbzrgdvpsjfgklthnyxoqe"
+ "wuxwbbzrmdvpsjfgklthnyiote"
+ "auowcbjrmdvpsjfgklthnyfoqe"
+ "auxwsbzrmdvpsjfglltcnyioqe"
+ "quxwcbzrmdvpkjfgklthnyioqt"
+ "vuxwcbzrudvpsjfgklthnyioqi"
+ "puxwcbzrmdvgsjfgklthncioqe"
+ "luxdcbzrmdvpsjfgkothnyioqe"
+ "auxwcbzrmdvpsjfyklthfhioqe"
+ "auxwcbqrmdvpsjfgkldhnyiote"
+ "quxwcbzrmlvpsjfgklthnyioqi"
+ "auxwcbzgmdvpsjfoklthnyiuqe"
+ "auxwcbzrmdvpsbfgkltdjyioqe"
+ "auxwcbzsmdrpsjfgklthpyioqe"
+ "auxwcbzrmfvpsjfwklthnyiote"
+ "auxbkpzrmdvpsjfgklthnyioqe"
+ "auxwcbzrddvpsjfsklthnyroqe"
+ ...]
+clj꞉AoC-2꞉> 
+["b" "a" "b" "a" "b" "c"]
+clj꞉AoC-2꞉> 
+["auxwcbzrmdvpsjfgkrthnkioqm"
+ "auxwcbzrmdvpsjfgbltonyijqe"
+ "auxwcbzrmdfpsefgklthnoioqe"
+ "auxwcbzrmdvpsjfgkluhnjisqe"
+ "auxwcbzrmdvesjfgdzthnyioqe"
+ "auxwcbzrmdvhsjfgklthnmijqe"
+ "auxwcbzridvpsjfgkltxeyioqe"
+ "ayxwcbzrgdvpsjfgklthiyioqe"
+ "ajxwcbzrmdvpsjfgklkhnyiode"
+ "auxwcbcrmdvpsjfqelthnyioqe"
+ "auxwcbzrmsvpsjsgklthnyiope"
+ "auxwcbzrmqvpsjzgklghnyioqe"
+ "auxwcbzrmdvpsjtqklthxyioqe"
+ "auxwcbzrmdopsjfdklthncioqe"
+ "auxwcbzrmdvpsjfgkltmhyfoqe"
+ "aixwcbzrmdvpsjfgllthdyeoqe"
+ "vuxicbzrmdepsjfgklthnyioqe"
+ "auxwcbbxmdkpsjfgklthnyioqe"
+ "auxwcbzrgdvpsofaklthnyioqe"
+ "auxycbzrmdvpsjfgklthnyuose"
+ "aujwcbzrmdvprjfgkltcnyioqe"
+ "auxwgbzrmdvpsjfgyzthnyioqe"
+ "auxwcbzrmavpsjfgkltsnyiome"
+ "auxwcbgrmdvpsjfgkdthnrioqe"
+ "kuxwcbzrmdvpsyfgklthnyioue"
+ "auxwcbzomdvpjdfgklthnyioqe"
+ "auxwcbzrmdppsjfgklthvyifqe"
+ "aunwubzrmdvpsjrgklthnyioqe"
+ "auxwcbzrmoipsjfgklbhnyioqe"
+ "auxwdbzrmdvpsjfgmlthnyioce"
+ "auxwcbzjmsvpsjfiklthnyioqe"
+ "auxwcbzrmwcpsjfcklthnyioqe"
+ "auxwcbzfmdvprjfhklthnyioqe"
+ "auxdcbzrgdvpsjfgklthnyxoqe"
+ "wuxwbbzrmdvpsjfgklthnyiote"
+ "auowcbjrmdvpsjfgklthnyfoqe"
+ "auxwsbzrmdvpsjfglltcnyioqe"
+ "quxwcbzrmdvpkjfgklthnyioqt"
+ "vuxwcbzrudvpsjfgklthnyioqi"
+ "puxwcbzrmdvgsjfgklthncioqe"
+ "luxdcbzrmdvpsjfgkothnyioqe"
+ "auxwcbzrmdvpsjfyklthfhioqe"
+ "auxwcbqrmdvpsjfgkldhnyiote"
+ "quxwcbzrmlvpsjfgklthnyioqi"
+ "auxwcbzgmdvpsjfoklthnyiuqe"
+ "auxwcbzrmdvpsbfgkltdjyioqe"
+ "auxwcbzsmdrpsjfgklthpyioqe"
+ "auxwcbzrmfvpsjfwklthnyiote"
+ "auxbkpzrmdvpsjfgklthnyioqe"
+ "auxwcbzrddvpsjfsklthnyroqe"
+ ...]
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+["auxwcbzrmdvpsjfgkrthnkioqm"
+ "auxwcbzrmdvpsjfgbltonyijqe"
+ "auxwcbzrmdfpsefgklthnoioqe"
+ "auxwcbzrmdvpsjfgkluhnjisqe"
+ "auxwcbzrmdvesjfgdzthnyioqe"
+ "auxwcbzrmdvhsjfgklthnmijqe"
+ "auxwcbzridvpsjfgkltxeyioqe"
+ "ayxwcbzrgdvpsjfgklthiyioqe"
+ "ajxwcbzrmdvpsjfgklkhnyiode"
+ "auxwcbcrmdvpsjfqelthnyioqe"
+ "auxwcbzrmsvpsjsgklthnyiope"
+ "auxwcbzrmqvpsjzgklghnyioqe"
+ "auxwcbzrmdvpsjtqklthxyioqe"
+ "auxwcbzrmdopsjfdklthncioqe"
+ "auxwcbzrmdvpsjfgkltmhyfoqe"
+ "aixwcbzrmdvpsjfgllthdyeoqe"
+ "vuxicbzrmdepsjfgklthnyioqe"
+ "auxwcbbxmdkpsjfgklthnyioqe"
+ "auxwcbzrgdvpsofaklthnyioqe"
+ "auxycbzrmdvpsjfgklthnyuose"
+ "aujwcbzrmdvprjfgkltcnyioqe"
+ "auxwgbzrmdvpsjfgyzthnyioqe"
+ "auxwcbzrmavpsjfgkltsnyiome"
+ "auxwcbgrmdvpsjfgkdthnrioqe"
+ "kuxwcbzrmdvpsyfgklthnyioue"
+ "auxwcbzomdvpjdfgklthnyioqe"
+ "auxwcbzrmdppsjfgklthvyifqe"
+ "aunwubzrmdvpsjrgklthnyioqe"
+ "auxwcbzrmoipsjfgklbhnyioqe"
+ "auxwdbzrmdvpsjfgmlthnyioce"
+ "auxwcbzjmsvpsjfiklthnyioqe"
+ "auxwcbzrmwcpsjfcklthnyioqe"
+ "auxwcbzfmdvprjfhklthnyioqe"
+ "auxdcbzrgdvpsjfgklthnyxoqe"
+ "wuxwbbzrmdvpsjfgklthnyiote"
+ "auowcbjrmdvpsjfgklthnyfoqe"
+ "auxwsbzrmdvpsjfglltcnyioqe"
+ "quxwcbzrmdvpkjfgklthnyioqt"
+ "vuxwcbzrudvpsjfgklthnyioqi"
+ "puxwcbzrmdvgsjfgklthncioqe"
+ "luxdcbzrmdvpsjfgkothnyioqe"
+ "auxwcbzrmdvpsjfyklthfhioqe"
+ "auxwcbqrmdvpsjfgkldhnyiote"
+ "quxwcbzrmlvpsjfgklthnyioqi"
+ "auxwcbzgmdvpsjfoklthnyiuqe"
+ "auxwcbzrmdvpsbfgkltdjyioqe"
+ "auxwcbzsmdrpsjfgklthpyioqe"
+ "auxwcbzrmfvpsjfwklthnyiote"
+ "auxbkpzrmdvpsjfgklthnyioqe"
+ "auxwcbzrddvpsjfsklthnyroqe"
+ ...]
+clj꞉AoC-2꞉> 
+{1 250}
+clj꞉AoC-2꞉> 
+["auxwcbzrmdvpsjfgkrthnkioqm"
+ "auxwcbzrmdvpsjfgbltonyijqe"
+ "auxwcbzrmdfpsefgklthnoioqe"
+ "auxwcbzrmdvpsjfgkluhnjisqe"
+ "auxwcbzrmdvesjfgdzthnyioqe"
+ "auxwcbzrmdvhsjfgklthnmijqe"
+ "auxwcbzridvpsjfgkltxeyioqe"
+ "ayxwcbzrgdvpsjfgklthiyioqe"
+ "ajxwcbzrmdvpsjfgklkhnyiode"
+ "auxwcbcrmdvpsjfqelthnyioqe"
+ "auxwcbzrmsvpsjsgklthnyiope"
+ "auxwcbzrmqvpsjzgklghnyioqe"
+ "auxwcbzrmdvpsjtqklthxyioqe"
+ "auxwcbzrmdopsjfdklthncioqe"
+ "auxwcbzrmdvpsjfgkltmhyfoqe"
+ "aixwcbzrmdvpsjfgllthdyeoqe"
+ "vuxicbzrmdepsjfgklthnyioqe"
+ "auxwcbbxmdkpsjfgklthnyioqe"
+ "auxwcbzrgdvpsofaklthnyioqe"
+ "auxycbzrmdvpsjfgklthnyuose"
+ "aujwcbzrmdvprjfgkltcnyioqe"
+ "auxwgbzrmdvpsjfgyzthnyioqe"
+ "auxwcbzrmavpsjfgkltsnyiome"
+ "auxwcbgrmdvpsjfgkdthnrioqe"
+ "kuxwcbzrmdvpsyfgklthnyioue"
+ "auxwcbzomdvpjdfgklthnyioqe"
+ "auxwcbzrmdppsjfgklthvyifqe"
+ "aunwubzrmdvpsjrgklthnyioqe"
+ "auxwcbzrmoipsjfgklbhnyioqe"
+ "auxwdbzrmdvpsjfgmlthnyioce"
+ "auxwcbzjmsvpsjfiklthnyioqe"
+ "auxwcbzrmwcpsjfcklthnyioqe"
+ "auxwcbzfmdvprjfhklthnyioqe"
+ "auxdcbzrgdvpsjfgklthnyxoqe"
+ "wuxwbbzrmdvpsjfgklthnyiote"
+ "auowcbjrmdvpsjfgklthnyfoqe"
+ "auxwsbzrmdvpsjfglltcnyioqe"
+ "quxwcbzrmdvpkjfgklthnyioqt"
+ "vuxwcbzrudvpsjfgklthnyioqi"
+ "puxwcbzrmdvgsjfgklthncioqe"
+ "luxdcbzrmdvpsjfgkothnyioqe"
+ "auxwcbzrmdvpsjfyklthfhioqe"
+ "auxwcbqrmdvpsjfgkldhnyiote"
+ "quxwcbzrmlvpsjfgklthnyioqi"
+ "auxwcbzgmdvpsjfoklthnyiuqe"
+ "auxwcbzrmdvpsbfgkltdjyioqe"
+ "auxwcbzsmdrpsjfgklthpyioqe"
+ "auxwcbzrmfvpsjfwklthnyiote"
+ "auxbkpzrmdvpsjfgklthnyioqe"
+ "auxwcbzrddvpsjfsklthnyroqe"
+ ...]
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+["auxwcbzrmdvpsjfgkrthnkioqm"
+ "auxwcbzrmdvpsjfgbltonyijqe"
+ "auxwcbzrmdfpsefgklthnoioqe"
+ "auxwcbzrmdvpsjfgkluhnjisqe"
+ "auxwcbzrmdvesjfgdzthnyioqe"
+ "auxwcbzrmdvhsjfgklthnmijqe"
+ "auxwcbzridvpsjfgkltxeyioqe"
+ "ayxwcbzrgdvpsjfgklthiyioqe"
+ "ajxwcbzrmdvpsjfgklkhnyiode"
+ "auxwcbcrmdvpsjfqelthnyioqe"
+ "auxwcbzrmsvpsjsgklthnyiope"
+ "auxwcbzrmqvpsjzgklghnyioqe"
+ "auxwcbzrmdvpsjtqklthxyioqe"
+ "auxwcbzrmdopsjfdklthncioqe"
+ "auxwcbzrmdvpsjfgkltmhyfoqe"
+ "aixwcbzrmdvpsjfgllthdyeoqe"
+ "vuxicbzrmdepsjfgklthnyioqe"
+ "auxwcbbxmdkpsjfgklthnyioqe"
+ "auxwcbzrgdvpsofaklthnyioqe"
+ "auxycbzrmdvpsjfgklthnyuose"
+ "aujwcbzrmdvprjfgkltcnyioqe"
+ "auxwgbzrmdvpsjfgyzthnyioqe"
+ "auxwcbzrmavpsjfgkltsnyiome"
+ "auxwcbgrmdvpsjfgkdthnrioqe"
+ "kuxwcbzrmdvpsyfgklthnyioue"
+ "auxwcbzomdvpjdfgklthnyioqe"
+ "auxwcbzrmdppsjfgklthvyifqe"
+ "aunwubzrmdvpsjrgklthnyioqe"
+ "auxwcbzrmoipsjfgklbhnyioqe"
+ "auxwdbzrmdvpsjfgmlthnyioce"
+ "auxwcbzjmsvpsjfiklthnyioqe"
+ "auxwcbzrmwcpsjfcklthnyioqe"
+ "auxwcbzfmdvprjfhklthnyioqe"
+ "auxdcbzrgdvpsjfgklthnyxoqe"
+ "wuxwbbzrmdvpsjfgklthnyiote"
+ "auowcbjrmdvpsjfgklthnyfoqe"
+ "auxwsbzrmdvpsjfglltcnyioqe"
+ "quxwcbzrmdvpkjfgklthnyioqt"
+ "vuxwcbzrudvpsjfgklthnyioqi"
+ "puxwcbzrmdvgsjfgklthncioqe"
+ "luxdcbzrmdvpsjfgkothnyioqe"
+ "auxwcbzrmdvpsjfyklthfhioqe"
+ "auxwcbqrmdvpsjfgkldhnyiote"
+ "quxwcbzrmlvpsjfgklthnyioqi"
+ "auxwcbzgmdvpsjfoklthnyiuqe"
+ "auxwcbzrmdvpsbfgkltdjyioqe"
+ "auxwcbzsmdrpsjfgklthpyioqe"
+ "auxwcbzrmfvpsjfwklthnyiote"
+ "auxbkpzrmdvpsjfgklthnyioqe"
+ "auxwcbzrddvpsjfsklthnyroqe"
+ ...]
+clj꞉AoC-2꞉> 
+{1 20, 2 3}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:21:17).
+; Unable to resolve symbol: strseq in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: strseq in this context
+clj꞉AoC-2꞉> 
+#function[clojure.core/first--5449]
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:21:17).
+; Unable to resolve symbol: strseq in this context
+clj꞉AoC-2꞉> 
+auxwcbzrmdvpsjfgkrthnkioqm
+nil
+clj꞉AoC-2꞉> 
+auxwcbzrmdvpsjfgkrthnkioqm
+nil
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+{1 20, 2 3}
+clj꞉AoC-2꞉> 
+{1 20, 2 3}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:26:8).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+{1 20, 2 3}
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/findfrq (REPL:8).
+; class clojure.lang.PersistentVector$ChunkedSeq cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentVector$ChunkedSeq is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/findfrq (REPL:8).
+; class clojure.lang.PersistentVector$ChunkedSeq cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentVector$ChunkedSeq is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉AoC-2꞉> 
+; Syntax error (UnsupportedOperationException) compiling recur at (e:\projects\clojure\AoC-2.clj:25:7).
+; Can only recur from tail position
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/findfrq (REPL:8).
+; class clojure.lang.PersistentVector$ChunkedSeq cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentVector$ChunkedSeq is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap')
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+"auxwcbzrmdvpsjfgkrthnkioqm"
+clj꞉AoC-2꞉> 
+"auxwcbzrmdvpsjfgkrthnkioqm"
+clj꞉AoC-2꞉> 
+("auxwcbzrmdvpsjfgbltonyijqe"
+ "auxwcbzrmdfpsefgklthnoioqe"
+ "auxwcbzrmdvpsjfgkluhnjisqe"
+ "auxwcbzrmdvesjfgdzthnyioqe"
+ "auxwcbzrmdvhsjfgklthnmijqe"
+ "auxwcbzridvpsjfgkltxeyioqe"
+ "ayxwcbzrgdvpsjfgklthiyioqe"
+ "ajxwcbzrmdvpsjfgklkhnyiode"
+ "auxwcbcrmdvpsjfqelthnyioqe"
+ "auxwcbzrmsvpsjsgklthnyiope"
+ "auxwcbzrmqvpsjzgklghnyioqe"
+ "auxwcbzrmdvpsjtqklthxyioqe"
+ "auxwcbzrmdopsjfdklthncioqe"
+ "auxwcbzrmdvpsjfgkltmhyfoqe"
+ "aixwcbzrmdvpsjfgllthdyeoqe"
+ "vuxicbzrmdepsjfgklthnyioqe"
+ "auxwcbbxmdkpsjfgklthnyioqe"
+ "auxwcbzrgdvpsofaklthnyioqe"
+ "auxycbzrmdvpsjfgklthnyuose"
+ "aujwcbzrmdvprjfgkltcnyioqe"
+ "auxwgbzrmdvpsjfgyzthnyioqe"
+ "auxwcbzrmavpsjfgkltsnyiome"
+ "auxwcbgrmdvpsjfgkdthnrioqe"
+ "kuxwcbzrmdvpsyfgklthnyioue"
+ "auxwcbzomdvpjdfgklthnyioqe"
+ "auxwcbzrmdppsjfgklthvyifqe"
+ "aunwubzrmdvpsjrgklthnyioqe"
+ "auxwcbzrmoipsjfgklbhnyioqe"
+ "auxwdbzrmdvpsjfgmlthnyioce"
+ "auxwcbzjmsvpsjfiklthnyioqe"
+ "auxwcbzrmwcpsjfcklthnyioqe"
+ "auxwcbzfmdvprjfhklthnyioqe"
+ "auxdcbzrgdvpsjfgklthnyxoqe"
+ "wuxwbbzrmdvpsjfgklthnyiote"
+ "auowcbjrmdvpsjfgklthnyfoqe"
+ "auxwsbzrmdvpsjfglltcnyioqe"
+ "quxwcbzrmdvpkjfgklthnyioqt"
+ "vuxwcbzrudvpsjfgklthnyioqi"
+ "puxwcbzrmdvgsjfgklthncioqe"
+ "luxdcbzrmdvpsjfgkothnyioqe"
+ "auxwcbzrmdvpsjfyklthfhioqe"
+ "auxwcbqrmdvpsjfgkldhnyiote"
+ "quxwcbzrmlvpsjfgklthnyioqi"
+ "auxwcbzgmdvpsjfoklthnyiuqe"
+ "auxwcbzrmdvpsbfgkltdjyioqe"
+ "auxwcbzsmdrpsjfgklthpyioqe"
+ "auxwcbzrmfvpsjfwklthnyiote"
+ "auxbkpzrmdvpsjfgklthnyioqe"
+ "auxwcbzrddvpsjfsklthnyroqe"
+ "abxwcbzrmdvpsjfgkltdnyivqe"
+ ...)
+clj꞉AoC-2꞉> 
+"auxwcbzrmdvpsjfgkrthnkioqm"
+clj꞉AoC-2꞉> 
+["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "r" "t" "h" "n" "k" "i" "o" "q" "m"]
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "r" "t" "h" "n" "k" "i" "o" "q" "m"]
+clj꞉AoC-2꞉> 
+(["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "b" "l" "t" "o" "n" "y" "i" "j" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "f" "p" "s" "e" "f" "g" "k" "l" "t" "h" "n" "o" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "u" "h" "n" "j" "i" "s" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "e" "s" "j" "f" "g" "d" "z" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "h" "s" "j" "f" "g" "k" "l" "t" "h" "n" "m" "i" "j" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "i" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "x" "e" "y" "i" "o" "q" "e"]
+ ["a" "y" "x" "w" "c" "b" "z" "r" "g" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "i" "y" "i" "o" "q" "e"]
+ ["a" "j" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "k" "h" "n" "y" "i" "o" "d" "e"]
+ ["a" "u" "x" "w" "c" "b" "c" "r" "m" "d" "v" "p" "s" "j" "f" "q" "e" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "s" "v" "p" "s" "j" "s" "g" "k" "l" "t" "h" "n" "y" "i" "o" "p" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "q" "v" "p" "s" "j" "z" "g" "k" "l" "g" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "t" "q" "k" "l" "t" "h" "x" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "o" "p" "s" "j" "f" "d" "k" "l" "t" "h" "n" "c" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "m" "h" "y" "f" "o" "q" "e"]
+ ["a" "i" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "l" "l" "t" "h" "d" "y" "e" "o" "q" "e"]
+ ["v" "u" "x" "i" "c" "b" "z" "r" "m" "d" "e" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "b" "x" "m" "d" "k" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "g" "d" "v" "p" "s" "o" "f" "a" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "y" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "u" "o" "s" "e"]
+ ["a" "u" "j" "w" "c" "b" "z" "r" "m" "d" "v" "p" "r" "j" "f" "g" "k" "l" "t" "c" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "g" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "y" "z" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "a" "v" "p" "s" "j" "f" "g" "k" "l" "t" "s" "n" "y" "i" "o" "m" "e"]
+ ["a" "u" "x" "w" "c" "b" "g" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "d" "t" "h" "n" "r" "i" "o" "q" "e"]
+ ["k" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "y" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "u" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "o" "m" "d" "v" "p" "j" "d" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "p" "p" "s" "j" "f" "g" "k" "l" "t" "h" "v" "y" "i" "f" "q" "e"]
+ ["a" "u" "n" "w" "u" "b" "z" "r" "m" "d" "v" "p" "s" "j" "r" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "o" "i" "p" "s" "j" "f" "g" "k" "l" "b" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "d" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "m" "l" "t" "h" "n" "y" "i" "o" "c" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "j" "m" "s" "v" "p" "s" "j" "f" "i" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "w" "c" "p" "s" "j" "f" "c" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "f" "m" "d" "v" "p" "r" "j" "f" "h" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "d" "c" "b" "z" "r" "g" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "x" "o" "q" "e"]
+ ["w" "u" "x" "w" "b" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "t" "e"]
+ ["a" "u" "o" "w" "c" "b" "j" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "f" "o" "q" "e"]
+ ["a" "u" "x" "w" "s" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "l" "l" "t" "c" "n" "y" "i" "o" "q" "e"]
+ ["q" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "k" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "t"]
+ ["v" "u" "x" "w" "c" "b" "z" "r" "u" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "i"]
+ ["p" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "g" "s" "j" "f" "g" "k" "l" "t" "h" "n" "c" "i" "o" "q" "e"]
+ ["l" "u" "x" "d" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "o" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "y" "k" "l" "t" "h" "f" "h" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "q" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "d" "h" "n" "y" "i" "o" "t" "e"]
+ ["q" "u" "x" "w" "c" "b" "z" "r" "m" "l" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "i"]
+ ["a" "u" "x" "w" "c" "b" "z" "g" "m" "d" "v" "p" "s" "j" "f" "o" "k" "l" "t" "h" "n" "y" "i" "u" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "b" "f" "g" "k" "l" "t" "d" "j" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "s" "m" "d" "r" "p" "s" "j" "f" "g" "k" "l" "t" "h" "p" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "f" "v" "p" "s" "j" "f" "w" "k" "l" "t" "h" "n" "y" "i" "o" "t" "e"]
+ ["a" "u" "x" "b" "k" "p" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "d" "d" "v" "p" "s" "j" "f" "s" "k" "l" "t" "h" "n" "y" "r" "o" "q" "e"]
+ ["a" "b" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "d" "n" "y" "i" "v" "q" "e"]
+ ...)
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "r" "t" "h" "n" "k" "i" "o" "q" "m"]
+clj꞉AoC-2꞉> 
+(["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "b" "l" "t" "o" "n" "y" "i" "j" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "f" "p" "s" "e" "f" "g" "k" "l" "t" "h" "n" "o" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "u" "h" "n" "j" "i" "s" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "e" "s" "j" "f" "g" "d" "z" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "h" "s" "j" "f" "g" "k" "l" "t" "h" "n" "m" "i" "j" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "i" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "x" "e" "y" "i" "o" "q" "e"]
+ ["a" "y" "x" "w" "c" "b" "z" "r" "g" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "i" "y" "i" "o" "q" "e"]
+ ["a" "j" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "k" "h" "n" "y" "i" "o" "d" "e"]
+ ["a" "u" "x" "w" "c" "b" "c" "r" "m" "d" "v" "p" "s" "j" "f" "q" "e" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "s" "v" "p" "s" "j" "s" "g" "k" "l" "t" "h" "n" "y" "i" "o" "p" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "q" "v" "p" "s" "j" "z" "g" "k" "l" "g" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "t" "q" "k" "l" "t" "h" "x" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "o" "p" "s" "j" "f" "d" "k" "l" "t" "h" "n" "c" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "m" "h" "y" "f" "o" "q" "e"]
+ ["a" "i" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "l" "l" "t" "h" "d" "y" "e" "o" "q" "e"]
+ ["v" "u" "x" "i" "c" "b" "z" "r" "m" "d" "e" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "b" "x" "m" "d" "k" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "g" "d" "v" "p" "s" "o" "f" "a" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "y" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "u" "o" "s" "e"]
+ ["a" "u" "j" "w" "c" "b" "z" "r" "m" "d" "v" "p" "r" "j" "f" "g" "k" "l" "t" "c" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "g" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "y" "z" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "a" "v" "p" "s" "j" "f" "g" "k" "l" "t" "s" "n" "y" "i" "o" "m" "e"]
+ ["a" "u" "x" "w" "c" "b" "g" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "d" "t" "h" "n" "r" "i" "o" "q" "e"]
+ ["k" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "y" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "u" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "o" "m" "d" "v" "p" "j" "d" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "p" "p" "s" "j" "f" "g" "k" "l" "t" "h" "v" "y" "i" "f" "q" "e"]
+ ["a" "u" "n" "w" "u" "b" "z" "r" "m" "d" "v" "p" "s" "j" "r" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "o" "i" "p" "s" "j" "f" "g" "k" "l" "b" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "d" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "m" "l" "t" "h" "n" "y" "i" "o" "c" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "j" "m" "s" "v" "p" "s" "j" "f" "i" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "w" "c" "p" "s" "j" "f" "c" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "f" "m" "d" "v" "p" "r" "j" "f" "h" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "d" "c" "b" "z" "r" "g" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "x" "o" "q" "e"]
+ ["w" "u" "x" "w" "b" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "t" "e"]
+ ["a" "u" "o" "w" "c" "b" "j" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "f" "o" "q" "e"]
+ ["a" "u" "x" "w" "s" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "l" "l" "t" "c" "n" "y" "i" "o" "q" "e"]
+ ["q" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "k" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "t"]
+ ["v" "u" "x" "w" "c" "b" "z" "r" "u" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "i"]
+ ["p" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "g" "s" "j" "f" "g" "k" "l" "t" "h" "n" "c" "i" "o" "q" "e"]
+ ["l" "u" "x" "d" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "o" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "y" "k" "l" "t" "h" "f" "h" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "q" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "d" "h" "n" "y" "i" "o" "t" "e"]
+ ["q" "u" "x" "w" "c" "b" "z" "r" "m" "l" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "i"]
+ ["a" "u" "x" "w" "c" "b" "z" "g" "m" "d" "v" "p" "s" "j" "f" "o" "k" "l" "t" "h" "n" "y" "i" "u" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "b" "f" "g" "k" "l" "t" "d" "j" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "s" "m" "d" "r" "p" "s" "j" "f" "g" "k" "l" "t" "h" "p" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "m" "f" "v" "p" "s" "j" "f" "w" "k" "l" "t" "h" "n" "y" "i" "o" "t" "e"]
+ ["a" "u" "x" "b" "k" "p" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "h" "n" "y" "i" "o" "q" "e"]
+ ["a" "u" "x" "w" "c" "b" "z" "r" "d" "d" "v" "p" "s" "j" "f" "s" "k" "l" "t" "h" "n" "y" "r" "o" "q" "e"]
+ ["a" "b" "x" "w" "c" "b" "z" "r" "m" "d" "v" "p" "s" "j" "f" "g" "k" "l" "t" "d" "n" "y" "i" "v" "q" "e"]
+ ...)
+clj꞉AoC-2꞉> 
+{1 20, 2 3}
+clj꞉AoC-2꞉> 
+{1 31375}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:31:13).
+; Unable to resolve symbol: strlst in this context
+clj꞉AoC-2꞉> 
+{1 20, 2 3}
+clj꞉AoC-2꞉> 
+{1 5150, 2 633, 3 28}
+clj꞉AoC-2꞉> 
+{1 5150, 2 633, 3 28}
+clj꞉AoC-2꞉> 
+([2 633] [3 28])
+clj꞉AoC-2꞉> 
+(633 28)
+clj꞉AoC-2꞉> 
+661
+clj꞉AoC-2꞉> 
+17724
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+{["t" 1] 1,
+ ["w" 1] 1,
+ ["k" 2] 1,
+ ["n" 1] 1,
+ ["u" 1] 1,
+ ["m" 2] 1,
+ ["c" 1] 1,
+ ["q" 1] 1,
+ ["i" 1] 1,
+ ["d" 1] 1,
+ ["s" 1] 1,
+ ["h" 1] 1,
+ ["g" 1] 1,
+ ["v" 1] 1,
+ ["o" 1] 1,
+ ["x" 1] 1,
+ ["f" 1] 1,
+ ["z" 1] 1,
+ ["r" 2] 1,
+ ["p" 1] 1,
+ ["b" 1] 1,
+ ["a" 1] 1,
+ ["j" 1] 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+; Execution error (IllegalArgumentException) at AoC-2/findfrq$fn (REPL:22).
+; assoc expects even number of arguments after map/vector, found odd number
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:47:12).
+; Unable to resolve symbol: m in this context
+clj꞉AoC-2꞉> 
+#'AoC-2/m
+clj꞉AoC-2꞉> 
+; Execution error (IllegalArgumentException) at AoC-2/fn (REPL:47).
+; assoc expects even number of arguments after map/vector, found odd number
+clj꞉AoC-2꞉> 
+1
+clj꞉AoC-2꞉> 
+; Execution error (IllegalArgumentException) at AoC-2/findfrq$fn (REPL:22).
+; assoc expects even number of arguments after map/vector, found odd number
+clj꞉AoC-2꞉> 
+#'AoC-2/findfrq
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+({"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 2,
+  "b" 1,
+  "r" 2,
+  "g" 1,
+  "u" 1,
+  "h" 1,
+  "m" 2,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 2,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "b" 2,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 2,
+  "e" 2,
+  "q" 1,
+  "p" 1,
+  "x" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 2,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 2,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 2,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "g" 1,
+  "l" 1,
+  "u" 2,
+  "h" 1,
+  "m" 1,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "z" 2,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 2,
+  "q" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "j" 2,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 2,
+  "m" 2,
+  "c" 1}
+ {"d" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 2,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 2,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 2,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 2,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 2,
+  "g" 2,
+  "l" 1,
+  "h" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "p" 1,
+  "j" 2,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "i" 1,
+  "k" 2,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 2,
+  "q" 2,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 2}
+ {"n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 3,
+  "e" 1,
+  "p" 2,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"n" 1,
+  "z" 2,
+  "w" 1,
+  "s" 1,
+  "e" 1,
+  "q" 2,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 2,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "e" 1,
+  "q" 2,
+  "p" 1,
+  "j" 1,
+  "x" 2,
+  "v" 1,
+  "a" 1,
+  "t" 2,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 2,
+  "c" 2}
+ {"d" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 2,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 2,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 2,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 2,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "s" 1,
+  "f" 1,
+  "e" 2,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "t" 1,
+  "i" 2,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 2,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 2,
+  "b" 2,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "x" 1,
+  "v" 1,
+  "a" 2,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "o" 2,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "s" 2,
+  "f" 1,
+  "e" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 2,
+  "g" 1,
+  "l" 1,
+  "u" 2,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 2,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 2,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "m" 1,
+  "o" 1,
+  "c" 2}
+ {"d" 1,
+  "n" 1,
+  "z" 2,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "b" 1,
+  "r" 1,
+  "y" 2,
+  "g" 2,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1}
+ {"n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 2,
+  "f" 1,
+  "e" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 2,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "m" 2,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 2,
+  "g" 2,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "p" 1,
+  "x" 1,
+  "v" 1,
+  "t" 1,
+  "i" 1,
+  "k" 2,
+  "b" 1,
+  "r" 1,
+  "y" 2,
+  "g" 1,
+  "l" 1,
+  "u" 2,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 2,
+  "c" 1}
+ {"d" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 2,
+  "e" 1,
+  "q" 1,
+  "p" 2,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 2,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 2,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 2,
+  "h" 1,
+  "m" 1,
+  "o" 1}
+ {"n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "a" 1,
+  "i" 2,
+  "k" 1,
+  "b" 2,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 2,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 2,
+  "o" 1,
+  "c" 1}
+ {"n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 2,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 2,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 2,
+  "k" 1,
+  "b" 1,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"n" 1,
+  "z" 1,
+  "w" 2,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 3}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "f" 2,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 2,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "z" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 2,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 2,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 2,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "t" 2,
+  "i" 1,
+  "k" 1,
+  "b" 2,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1}
+ {"d" 1,
+  "n" 1,
+  "w" 1,
+  "s" 1,
+  "f" 2,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 2,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 2,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 2,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 2,
+  "u" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "f" 1,
+  "q" 2,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "t" 2,
+  "i" 1,
+  "k" 2,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 2,
+  "t" 1,
+  "i" 2,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 2,
+  "h" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "g" 2,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 2}
+ {"d" 2,
+  "n" 1,
+  "z" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 2,
+  "c" 1}
+ {"d" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 2,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 2,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "n" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "q" 2,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "t" 1,
+  "i" 2,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 2,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 2,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 2,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 2,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "z" 1,
+  "w" 1,
+  "s" 2,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 2,
+  "j" 1,
+  "x" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"n" 1,
+  "z" 1,
+  "w" 2,
+  "s" 1,
+  "f" 2,
+  "e" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 2,
+  "i" 1,
+  "k" 1,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "s" 1,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 2,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 2,
+  "b" 1,
+  "r" 1,
+  "y" 1,
+  "g" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "m" 1,
+  "o" 1}
+ {"d" 2,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 2,
+  "f" 1,
+  "e" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "k" 1,
+  "b" 1,
+  "r" 2,
+  "y" 1,
+  "l" 1,
+  "u" 1,
+  "h" 1,
+  "o" 1,
+  "c" 1}
+ ...)
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+d 1
+(niln 1
+ nilz 1
+ nilw 1
+ nils 1
+ nilf 1
+ nilq 1
+ nilp 1
+ nilj 1
+ nilx 1
+ nilv 1
+ nila 1
+ nilt 1
+ nili 1
+ nilk 2
+ nilb 1
+ nilr 2
+ nilg 1
+ nilu 1
+ nilh 1
+ nilm 2
+ nilo 1
+ nilc 1
+ nil)
+clj꞉AoC-2꞉> 
+(nil nil nil nil nil nil nil nil nil nil nila 1
+ nil nil nil nil nil nil nil nil nil nil nil nil)
+clj꞉AoC-2꞉> 
+[d 1]
+(nil[n 1]
+ nil[z 1]
+ nil[w 1]
+ nil[s 1]
+ nil[f 1]
+ nil[q 1]
+ nil[p 1]
+ nil[j 1]
+ nil[x 1]
+ nil[v 1]
+ nil[a 1]
+ nil[t 1]
+ nil[i 1]
+ nil[k 2]
+ nil[b 1]
+ nil[r 2]
+ nil[g 1]
+ nil[u 1]
+ nil[h 1]
+ nil[m 2]
+ nil[o 1]
+ nil[c 1]
+ nil)
+clj꞉AoC-2꞉> 
+1
+(nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil1
+ nil2
+ nil1
+ nil2
+ nil1
+ nil1
+ nil1
+ nil2
+ nil1
+ nil1
+ nil)
+clj꞉AoC-2꞉> 
+d 1
+(niln 1
+ nilz 1
+ nilw 1
+ nils 1
+ nilf 1
+ nilq 1
+ nilp 1
+ nilj 1
+ nilx 1
+ nilv 1
+ nila 1
+ nilt 1
+ nili 1
+ nilk 2
+ nilb 1
+ nilr 2
+ nilg 1
+ nilu 1
+ nilh 1
+ nilm 2
+ nilo 1
+ nilc 1
+ nil)
+clj꞉AoC-2꞉> 
+; Error printing return value (ClassCastException) at clojure.core/apply (core.clj:662).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+{2 #{}, 3 #{}}
+nil
+clj꞉AoC-2꞉> 
+{2 #{}, 3 #{}}
+nil
+clj꞉AoC-2꞉> 
+{2 #{}, 3 #{}}
+nil
+clj꞉AoC-2꞉> 
+{2 #{}, 3 #{}}
+nil
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:24:11).
+; Unable to resolve symbol: k in this context
+clj꞉AoC-2꞉> 
+{2 #{}, 3 #{}}
+nil
+clj꞉AoC-2꞉> 
+d 1
+(niln 1
+ nilz 1
+ nilw 1
+ nils 1
+ nilf 1
+ nilq 1
+ nilp 1
+ nilj 1
+ nilx 1
+ nilv 1
+ nila 1
+ nilt 1
+ nili 1
+ nilk 2
+k 2
+ nilb 1
+ nilr 2
+r 2
+ nilg 1
+ nilu 1
+ nilh 1
+ nilm 2
+m 2
+ nilo 1
+ nilc 1
+ nil)
+clj꞉AoC-2꞉> 
+(nil nil nil nil nil nil nil nil nil nil nil nil nil nilk 2
+ nil nilr 2
+ nil nil nil nilm 2
+ nil nil nil)
+clj꞉AoC-2꞉> 
+(nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil)
+clj꞉AoC-2꞉> 
+{2 {}, 3 {}}
+nil
+clj꞉AoC-2꞉> 
+{2 {}, 3 {}}
+nil
+clj꞉AoC-2꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.RT/assoc (RT.java:827).
+; class clojure.core$aset cannot be cast to class clojure.lang.Associative (clojure.core$aset and clojure.lang.Associative are in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+#function[clojure.core/map/fn--5931]
+clj꞉AoC-2꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.RT/assoc (RT.java:827).
+; class clojure.core$aset cannot be cast to class clojure.lang.Associative (clojure.core$aset and clojure.lang.Associative are in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+(nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil)
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/modmap
+clj꞉AoC-2꞉> 
+; Execution error (UnsupportedOperationException) at AoC-2/modmap (REPL:26).
+; nth not supported on this type: PersistentHashMap
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: frqlst in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: frqlst in this context
+clj꞉AoC-2꞉> 
+; Execution error (UnsupportedOperationException) at AoC-2/eval8944 (REPL:25).
+; nth not supported on this type: PersistentHashMap
+clj꞉AoC-2꞉> 
+{d 1, n 1, z 1, w 1, s 1, f 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 2, g 1, u 1, h 1, m 2, o 1, c 1}
+nil
+clj꞉AoC-2꞉> 
+[d 1]
+nil
+clj꞉AoC-2꞉> 
+; Syntax error macroexpanding clojure.core/let at (e:\projects\clojure\AoC-2.clj:31:5).
+; [[k v]] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:31:5).
+; Unable to resolve symbol: k in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:32:5).
+; Unable to resolve symbol: k in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:32:5).
+; Unable to resolve symbol: k in this context
+clj꞉AoC-2꞉> 
+nil nil
+nil
+clj꞉AoC-2꞉> 
+d 1
+nil
+clj꞉AoC-2꞉> 
+#'AoC-2/modmap
+clj꞉AoC-2꞉> 
+; Syntax error (UnsupportedOperationException) compiling recur at (e:\projects\clojure\AoC-2.clj:28:11).
+; Can only recur from tail position
+clj꞉AoC-2꞉> 
+; Syntax error (UnsupportedOperationException) compiling recur at (e:\projects\clojure\AoC-2.clj:28:11).
+; Can only recur from tail position
+clj꞉AoC-2꞉> 
+; Syntax error (UnsupportedOperationException) compiling recur at (e:\projects\clojure\AoC-2.clj:28:11).
+; Can only recur from tail position
+clj꞉AoC-2꞉> 
+; Syntax error (UnsupportedOperationException) compiling recur at (e:\projects\clojure\AoC-2.clj:28:11).
+; Can only recur from tail position
+clj꞉AoC-2꞉> 
+; Syntax error (UnsupportedOperationException) compiling recur at (e:\projects\clojure\AoC-2.clj:28:11).
+; Can only recur from tail position
+clj꞉AoC-2꞉> 
+#'AoC-2/modmap
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+#'AoC-2/modmap
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/modmap
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: v in this context
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:0:0).
+; Unable to resolve symbol: k in this context
+clj꞉AoC-2꞉> 
+#function[clojure.core/println]
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+["d" 1]
+clj꞉AoC-2꞉> 
+; Syntax error macroexpanding clojure.core/let at (e:\projects\clojure\AoC-2.clj:29:1).
+; [[[k v]]] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
+nil
+nil
+clj꞉AoC-2꞉> 
+d
+nil
+clj꞉AoC-2꞉> 
+d nil
+nil
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+#'AoC-2/group-by-count
+clj꞉AoC-2꞉> 
+{20 [1], 3 [2]}
+clj꞉AoC-2꞉> 
+#'AoC-2/group-by-count
+clj꞉AoC-2꞉> 
+{[["d" 1]
+  ["n" 1]
+  ["z" 1]
+  ["w" 1]
+  ["s" 1]
+  ["f" 1]
+  ["q" 1]
+  ["p" 1]
+  ["j" 1]
+  ["x" 1]
+  ["v" 1]
+  ["a" 1]
+  ["t" 1]
+  ["i" 1]
+  ["k" 2]
+  ["b" 1]
+  ["r" 2]
+  ["g" 1]
+  ["u" 1]
+  ["h" 1]
+  ["m" 2]
+  ["o" 1]
+  ["c" 1]]
+ [[1
+   [["d" 1]
+    ["n" 1]
+    ["z" 1]
+    ["w" 1]
+    ["s" 1]
+    ["f" 1]
+    ["q" 1]
+    ["p" 1]
+    ["j" 1]
+    ["x" 1]
+    ["v" 1]
+    ["a" 1]
+    ["t" 1]
+    ["i" 1]
+    ["k" 2]
+    ["b" 1]
+    ["r" 2]
+    ["g" 1]
+    ["u" 1]
+    ["h" 1]
+    ["m" 2]
+    ["o" 1]
+    ["c" 1]]]]}
+clj꞉AoC-2꞉> 
+{[["d" 1]
+  ["n" 1]
+  ["z" 1]
+  ["w" 1]
+  ["s" 1]
+  ["f" 1]
+  ["q" 1]
+  ["p" 1]
+  ["j" 1]
+  ["x" 1]
+  ["v" 1]
+  ["a" 1]
+  ["t" 1]
+  ["i" 1]
+  ["k" 2]
+  ["b" 1]
+  ["r" 2]
+  ["g" 1]
+  ["u" 1]
+  ["h" 1]
+  ["m" 2]
+  ["o" 1]
+  ["c" 1]]
+ [[1
+   [["d" 1]
+    ["n" 1]
+    ["z" 1]
+    ["w" 1]
+    ["s" 1]
+    ["f" 1]
+    ["q" 1]
+    ["p" 1]
+    ["j" 1]
+    ["x" 1]
+    ["v" 1]
+    ["a" 1]
+    ["t" 1]
+    ["i" 1]
+    ["k" 2]
+    ["b" 1]
+    ["r" 2]
+    ["g" 1]
+    ["u" 1]
+    ["h" 1]
+    ["m" 2]
+    ["o" 1]
+    ["c" 1]]]]}
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:27:1).
+; Unable to resolve symbol: groub-by-count in this context
+clj꞉AoC-2꞉> 
+#'AoC-2/group-by-count
+clj꞉AoC-2꞉> 
+{20 [1], 3 [2]}
+clj꞉AoC-2꞉> 
+; Execution error (ArityException) at AoC-2/eval9133 (REPL:28).
+; Wrong number of args (1) passed to: clojure.core/group-by
+clj꞉AoC-2꞉> 
+{1
+ [["d" 1]
+  ["n" 1]
+  ["z" 1]
+  ["w" 1]
+  ["s" 1]
+  ["f" 1]
+  ["q" 1]
+  ["p" 1]
+  ["j" 1]
+  ["x" 1]
+  ["v" 1]
+  ["a" 1]
+  ["t" 1]
+  ["i" 1]
+  ["b" 1]
+  ["g" 1]
+  ["u" 1]
+  ["h" 1]
+  ["o" 1]
+  ["c" 1]],
+ 2 [["k" 2] ["r" 2] ["m" 2]]}
+clj꞉AoC-2꞉> 
+{["t" 1] 1,
+ ["w" 1] 1,
+ ["k" 2] 1,
+ ["n" 1] 1,
+ ["u" 1] 1,
+ ["m" 2] 1,
+ ["c" 1] 1,
+ ["q" 1] 1,
+ ["i" 1] 1,
+ ["d" 1] 1,
+ ["s" 1] 1,
+ ["h" 1] 1,
+ ["g" 1] 1,
+ ["v" 1] 1,
+ ["o" 1] 1,
+ ["x" 1] 1,
+ ["f" 1] 1,
+ ["z" 1] 1,
+ ["r" 2] 1,
+ ["p" 1] 1,
+ ["b" 1] 1,
+ ["a" 1] 1,
+ ["j" 1] 1}
+clj꞉AoC-2꞉> 
+#function[clojure.core/map/fn--5931]
+clj꞉AoC-2꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: AoC-2/eval9147/fn--9149
+clj꞉AoC-2꞉> 
+; Syntax error macroexpanding doseq at (e:\projects\clojure\AoC-2.clj:28:3).
+; doseq requires a vector for its binding in AoC-2:28
+clj꞉AoC-2꞉> 
+{"d" 1,
+ "n" 1,
+ "z" 1,
+ "w" 1,
+ "s" 1,
+ "f" 1,
+ "q" 1,
+ "p" 1,
+ "j" 1,
+ "x" 1,
+ "v" 1,
+ "a" 1,
+ "t" 1,
+ "i" 1,
+ "k" 2,
+ "b" 1,
+ "r" 2,
+ "g" 1,
+ "u" 1,
+ "h" 1,
+ "m" 2,
+ "o" 1,
+ "c" 1}
+clj꞉AoC-2꞉> 
+[{"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 2,
+  "b" 1,
+  "r" 2,
+  "g" 1,
+  "u" 1,
+  "h" 1,
+  "m" 2,
+  "o" 1,
+  "c" 1}
+ {"d" 1,
+  "n" 1,
+  "z" 1,
+  "w" 1,
+  "s" 1,
+  "f" 1,
+  "q" 1,
+  "p" 1,
+  "j" 1,
+  "x" 1,
+  "v" 1,
+  "a" 1,
+  "t" 1,
+  "i" 1,
+  "k" 2,
+  "b" 1,
+  "r" 2,
+  "g" 1,
+  "u" 1,
+  "h" 1,
+  "m" 2,
+  "o" 1,
+  "c" 1}]
+clj꞉AoC-2꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: AoC-2/eval9160/fn--9161
+clj꞉AoC-2꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: AoC-2/eval9164/fn--9165
+clj꞉AoC-2꞉> 
+[d 1]
+(nil[n 1]
+ nil[z 1]
+ nil[w 1]
+ nil[s 1]
+ nil[f 1]
+ nil[q 1]
+ nil[p 1]
+ nil[j 1]
+ nil[x 1]
+ nil[v 1]
+ nil[a 1]
+ nil[t 1]
+ nil[i 1]
+ nil[k 2]
+ nil[b 1]
+ nil[r 2]
+ nil[g 1]
+ nil[u 1]
+ nil[h 1]
+ nil[m 2]
+ nil[o 1]
+ nil[c 1]
+ nil)
+clj꞉AoC-2꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: AoC-2/eval9172/fn--9173
+clj꞉AoC-2꞉> 
+d
+(niln
+ nilz
+ nilw
+ nils
+ nilf
+ nilq
+ nilp
+ nilj
+ nilx
+ nilv
+ nila
+ nilt
+ nili
+ nilk
+ nilb
+ nilr
+ nilg
+ nilu
+ nilh
+ nilm
+ nilo
+ nilc
+ nil)
+clj꞉AoC-2꞉> 
+d 1
+(niln 1
+ nilz 1
+ nilw 1
+ nils 1
+ nilf 1
+ nilq 1
+ nilp 1
+ nilj 1
+ nilx 1
+ nilv 1
+ nila 1
+ nilt 1
+ nili 1
+ nilk 2
+ nilb 1
+ nilr 2
+ nilg 1
+ nilu 1
+ nilh 1
+ nilm 2
+ nilo 1
+ nilc 1
+ nil)
+clj꞉AoC-2꞉> 
+(nil nil nil nil nil nil nil nil nil nil nil nil nil nilk
+ nil nilr
+ nil nil nil nilm
+ nil nil nil)
+clj꞉AoC-2꞉> 
+("k" "r" "m")
+clj꞉AoC-2꞉> 
+; Syntax error macroexpanding clojure.core/let at (e:\projects\clojure\AoC-2.clj:20:1).
+; aset - failed: vector? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+clj꞉AoC-2꞉> 
+#{"k" "r" "m"}
+clj꞉AoC-2꞉> 
+nil
+clj꞉AoC-2꞉> 
+#{"d" "n" "z" "w" "s" "f" "e" "q" "p" "j" "x" "v" "a" "t" "i" "k" "b" "r" "y" "g" "l" "u" "h" "m" "o" "c"}
+clj꞉AoC-2꞉> 
+26
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:35:1).
+; Unable to resolve symbol: find-two in this context
+clj꞉AoC-2꞉> 
+#'AoC-2/find-two
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval9319 (REPL:35).
+; class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+26
+nil
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:50:1).
+; Unable to resolve symbol: find-three in this context
+clj꞉AoC-2꞉> 
+#'AoC-2/find-three
+clj꞉AoC-2꞉> 
+16
+nil
+clj꞉AoC-2꞉> 
+42
+clj꞉AoC-2꞉> 
+416
+clj꞉AoC-2꞉> 
+; Syntax error macroexpanding clojure.core/defn at (e:\projects\clojure\AoC-2.clj:52:1).
+; loop - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+; (loop [reading read-str two-set #{} three-set #{} result {}] (if (first reading) (let [frq (findfrq (first reading))] (recur (next reading) (into two-set (set (map key (filter (fn* [p1__9344#] (= (val p1__9344#) 2)) frq)))) (into three-set (set (map key (filter (fn* [p1__9345#] (= (val p1__9345#) 3)) frq)))) (merge-with + result frq))) (let [common (clojure.set/intersection two-set three-set)] (reduce + (map (fn* [p1__9346#] (get result p1__9346#)) common))))) - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:67:1).
+; Unable to resolve symbol: find-two-and-three in this context
+clj꞉user꞉> 
+; Syntax error macroexpanding clojure.core/defn at (e:\projects\clojure\AoC-2.clj:52:1).
+; loop - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+; (loop [reading read-str two-set #{} three-set #{} result {}] (if (first reading) (let [frq (findfrq (first reading))] (recur (next reading) (into two-set (set (map key (filter (fn* [p1__9363#] (= (val p1__9363#) 2)) frq)))) (into three-set (set (map key (filter (fn* [p1__9364#] (= (val p1__9364#) 3)) frq)))) (merge-with + result frq))) (let [common (clojure.set/intersection two-set three-set)] (reduce + (map (fn* [p1__9365#] (get result p1__9365#)) common))))) - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉AoC-2꞉> 
+; Syntax error macroexpanding clojure.core/defn at (e:\projects\clojure\AoC-2.clj:52:1).
+; loop - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+; (loop [reading read-str two-set #{} three-set #{} result {}] (if (first reading) (let [frq (findfrq (first reading))] (recur (next reading) (into two-set (set (map key (filter (fn* [p1__9369#] (= (val p1__9369#) 2)) frq)))) (into three-set (set (map key (filter (fn* [p1__9370#] (= (val p1__9370#) 3)) frq)))) (merge-with + result frq))) (let [common (clojure.set/intersection two-set three-set)] (reduce + (map (fn* [p1__9371#] (get result p1__9371#)) common))))) - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉AoC-2꞉> 
+; Syntax error macroexpanding clojure.core/defn at (e:\projects\clojure\AoC-2.clj:52:1).
+; loop - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+; (loop [reading read-str two-set #{} three-set #{} result {}] (if (first reading) (let [frq (findfrq (first reading))] (recur (next reading) (into two-set (set (map key (filter (fn* [p1__9375#] (= (val p1__9375#) 2)) frq)))) (into three-set (set (map key (filter (fn* [p1__9376#] (= (val p1__9376#) 3)) frq)))) (merge-with + result frq))) (let [common (clojure.set/intersection two-set three-set)] (reduce + (map (fn* [p1__9377#] (get result p1__9377#)) common))))) - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉AoC-2꞉> 
+#'AoC-2/find-two-and-three
+clj꞉AoC-2꞉> 
+4014
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval9466 (REPL:58).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+#'AoC-2/find-two
+clj꞉AoC-2꞉> 
+#'AoC-2/find-three
+clj꞉AoC-2꞉> 
+416
+clj꞉AoC-2꞉> 
+#'AoC-2/find-two-three
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval9597 (REPL:76).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+416
+clj꞉AoC-2꞉> 
+416
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+12
+clj꞉AoC-2꞉> 
+#'AoC-2/read-str
+clj꞉AoC-2꞉> 
+416
+clj꞉AoC-2꞉> 
+; Syntax error compiling at (e:\projects\clojure\AoC-2.clj:41:24).
+; Unable to resolve symbol: three-set in this context
+clj꞉AoC-2꞉> 
+; Execution error (ClassCastException) at AoC-2/eval9646 (REPL:41).
+; class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉AoC-2꞉> 
+16
+clj꞉AoC-2꞉> 
+{d 1, n 1, z 1, w 1, s 1, f 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 2, g 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, i 1, b 2, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 2, q 1, p 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, i 1, k 1, b 1, r 1, g 1, l 1, u 2, h 1, m 1, c 1}
+{d 2, n 1, z 2, w 1, s 1, f 1, e 2, q 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, j 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 2, m 2, c 1}
+{d 1, z 1, w 1, s 1, f 1, e 2, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 1, o 1, c 1}
+{d 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 2, k 1, b 1, r 1, y 2, g 2, l 1, h 1, o 1, c 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, p 1, j 2, x 1, v 1, a 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, w 1, s 1, f 1, e 2, q 2, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{n 1, z 1, w 1, s 3, e 1, p 2, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 2, w 1, s 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, i 1, k 1, b 1, r 1, y 1, g 2, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, z 1, w 1, s 1, e 1, q 2, p 1, j 1, x 2, v 1, a 1, t 2, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, l 1, u 1, h 1, m 1, o 2, c 2}
+{d 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 2, z 1, w 1, s 1, f 1, e 2, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 1, l 2, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 2, q 1, p 1, j 1, x 1, v 1, t 1, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, a 1, t 1, i 1, k 2, b 2, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 2, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, o 2, c 1}
+{d 1, n 1, z 1, s 2, f 1, e 1, p 1, j 1, x 1, v 1, a 1, t 1, k 1, b 1, r 1, y 2, g 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, f 1, e 1, q 1, p 1, j 2, v 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, m 1, o 1, c 2}
+{d 1, n 1, z 2, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 2, g 2, u 1, h 1, m 1, o 1}
+{n 1, z 1, w 1, s 2, f 1, e 1, p 1, j 1, x 1, v 1, a 2, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, m 2, o 1, c 1}
+{d 2, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 2, g 2, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, p 1, x 1, v 1, t 1, i 1, k 2, b 1, r 1, y 2, g 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 2, n 1, z 1, w 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, z 1, w 1, s 1, f 2, e 1, q 1, p 2, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, c 1}
+{d 1, n 2, z 1, w 1, s 1, e 1, q 1, p 1, j 1, v 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 2, h 1, m 1, o 1}
+{n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, i 2, k 1, b 2, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{n 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, i 2, k 1, b 1, y 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 1, w 2, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 1, m 1, o 1, c 3}
+{d 1, n 1, z 1, w 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 2, n 1, z 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, k 1, b 1, r 1, y 1, g 2, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 2, s 1, f 1, e 1, p 1, j 1, x 1, v 1, t 2, i 1, k 1, b 2, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1}
+{d 1, n 1, w 1, s 1, f 2, e 1, q 1, p 1, j 2, v 1, a 1, t 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 1, l 2, u 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, f 1, q 2, p 1, j 1, x 1, v 1, t 2, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, q 1, p 1, j 1, x 1, v 2, t 1, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, g 2, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 2, n 1, z 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 2, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 1, w 1, s 1, f 1, q 2, p 1, j 1, x 1, v 1, t 1, i 2, k 1, b 1, r 1, y 1, g 1, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 2, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{d 1, z 1, w 1, s 2, f 1, e 1, q 1, p 2, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 1, w 2, s 1, f 2, e 1, p 1, j 1, x 1, v 1, a 1, t 2, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 2, j 1, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1}
+{d 2, n 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, k 1, b 1, r 2, y 1, l 1, u 1, h 1, o 1, c 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 2, a 1, t 1, i 1, k 1, b 2, r 1, y 1, g 1, l 1, m 1, c 1}
+{n 1, z 1, w 2, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 1, g 2, l 1, h 1, m 1, o 1, c 1}
+{n 1, z 1, w 1, s 1, f 1, e 1, q 1, j 1, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 1, y 1, g 2, l 1, u 1, m 1, o 1, c 2}
+{d 1, w 1, s 1, f 1, e 1, q 1, p 2, j 1, x 1, v 1, a 2, t 1, i 1, k 1, b 1, y 1, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 2, i 1, b 1, r 1, g 1, l 1, u 2, h 2, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, e 1, q 1, p 2, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, i 1, k 2, b 2, r 1, y 1, g 1, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 2, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, a 2, t 1, i 1, b 1, r 1, y 1, g 1, u 2, h 1, m 1, o 1, c 1}
+{d 2, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, t 1, i 1, k 1, b 1, r 1, y 2, g 1, l 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, f 2, e 2, p 1, j 1, x 1, v 1, a 1, t 1, k 1, b 1, r 1, y 2, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 1, w 1, s 1, f 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, k 1, r 1, y 1, g 1, l 1, u 1, h 3, m 1, o 1, c 1}
+{d 1, n 1, z 2, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 3, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, i 1, k 1, b 1, r 1, y 2, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, o 1, c 2}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 2, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, v 1, a 1, t 3, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 2}
+{d 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 2, w 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, i 1, k 1, b 1, r 1, y 1, g 1, l 2, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, e 1, p 1, j 1, x 1, v 1, a 1, t 2, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 2, m 2, o 1, c 1}
+{d 1, n 1, z 3, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, t 1, i 1, k 1, b 2, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, y 1, g 2, l 1, u 1, h 1, o 2, c 1}
+{d 1, n 1, z 2, w 1, s 2, f 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{d 1, n 1, w 1, s 1, f 1, q 1, p 1, j 1, x 1, v 1, a 1, t 2, i 1, k 1, b 2, r 1, y 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 1, z 1, s 1, f 2, e 1, q 2, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, i 1, k 1, b 1, r 2, g 1, l 1, h 1, m 1, o 1, c 2}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 3, s 1, f 1, e 1, q 1, p 1, j 1, x 1, t 1, i 1, k 1, b 1, r 1, y 2, g 1, l 1, u 1, h 1, m 1, o 1}
+{d 1, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 2, l 1, u 1, h 2, m 1, o 1}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 1, q 1, j 2, x 1, v 1, a 1, t 2, k 1, b 1, r 1, y 1, g 1, l 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 2, y 1, l 1, h 1, m 2, o 1, c 2}
+{d 1, n 1, z 1, s 1, e 1, q 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 3, r 1, y 1, g 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 1, l 2, u 1, h 1, o 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 2, o 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 2, i 1, k 1, b 1, r 1, y 1, g 3, l 1, u 1, h 1, m 1, c 1}
+{d 2, n 1, z 2, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, i 1, b 1, r 1, y 1, g 2, l 1, u 1, h 1, m 1, o 1}
+{d 2, n 1, z 1, w 1, f 1, e 1, p 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 2, g 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 3, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, c 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, q 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 1, x 1, v 2, a 1, t 1, i 1, k 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, p 1, j 1, x 2, v 1, a 1, i 1, k 1, b 1, r 1, y 2, g 1, l 1, u 2, h 1, o 1, c 1}
+{d 1, n 2, z 1, w 1, s 1, e 1, q 2, p 1, j 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, z 1, s 1, f 1, e 1, q 1, p 1, j 1, v 1, a 1, t 2, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 2, k 1, y 1, g 2, l 1, u 1, h 1, m 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, t 1, k 1, b 3, r 1, y 1, g 1, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, f 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 2, z 1, w 1, s 1, f 2, e 1, p 2, j 1, x 1, v 1, a 1, i 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 2, q 1, p 1, j 1, x 1, a 1, t 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, g 1, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 3, k 1, b 1, r 1, y 1, g 1, u 2, h 1, m 1, c 1}
+{d 2, n 1, z 1, w 1, f 1, e 2, q 1, p 1, j 1, x 1, v 1, a 1, t 1, k 1, b 1, r 2, y 1, g 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 2, w 1, s 1, f 1, e 1, q 1, p 1, j 2, v 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 1, n 2, z 1, w 1, s 1, e 1, q 1, p 1, j 1, x 1, v 2, a 1, t 1, k 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, y 1, l 1, u 1, h 1, m 1, o 1, c 3}
+{d 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 2, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 2, u 1, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, i 1, k 1, r 1, y 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, w 1, s 1, f 1, e 1, q 1, p 2, j 1, x 1, v 1, a 1, t 2, i 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, j 1, x 1, v 2, a 1, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 2, w 1, s 1, f 1, e 1, q 1, p 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, u 2, h 1, m 1, c 1}
+{d 2, n 1, z 1, w 1, f 1, e 1, q 2, j 1, x 2, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, c 1}
+{d 1, n 1, w 1, s 1, f 2, e 1, q 1, j 1, x 1, v 1, a 1, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 2, z 1, w 2, f 1, e 1, q 1, p 1, j 1, v 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, i 1, k 1, b 2, r 1, y 1, g 2, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, q 1, p 1, j 1, x 1, a 2, t 2, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1}
+{d 1, z 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, m 2, o 1, c 1}
+{d 2, n 1, z 2, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 1, m 1, c 1}
+{n 1, z 1, w 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, r 1, y 2, g 1, l 1, u 2, h 1, m 1, o 1, c 2}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 1, q 1, p 2, x 1, v 1, a 1, t 1, i 1, k 1, r 1, y 1, g 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, i 2, k 2, b 1, r 1, y 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, p 1, j 3, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 1, g 1, l 1, u 1, h 1, m 1, c 1}
+{d 2, n 1, z 1, w 1, s 1, e 1, q 1, p 2, j 1, x 1, v 1, a 1, i 1, k 1, b 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, t 2, i 1, k 1, r 1, y 1, g 1, l 1, u 2, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, j 1, x 2, v 1, t 1, i 1, k 1, b 1, r 1, y 1, g 2, l 1, u 2, h 1, o 1, c 1}
+{d 2, n 1, z 1, w 1, s 1, e 1, q 1, p 1, j 1, x 1, v 2, a 2, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, h 1, m 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, t 2, k 1, b 1, y 1, g 1, l 1, u 1, h 2, m 1, c 1}
+{n 1, z 1, w 1, s 1, f 3, e 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 2, u 1, h 1, m 1, c 1}
+{d 1, z 1, w 1, s 1, f 1, q 2, j 2, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 2, w 1, s 1, f 1, e 1, q 1, j 1, x 1, a 1, t 2, i 1, k 2, b 1, r 1, y 1, g 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 2, w 1, s 1, f 2, e 1, q 1, p 1, x 1, v 1, a 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 2, f 1, q 1, p 1, j 1, x 1, v 1, a 2, t 1, i 1, k 2, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 2, t 1, i 1, k 1, r 1, y 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, a 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 2, a 1, t 1, i 2, k 1, b 1, r 1, g 1, l 1, h 1, m 1, o 1}
+{n 1, z 1, w 1, s 1, f 1, e 2, q 1, p 2, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 2, m 1, o 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, i 1, k 1, b 1, r 1, y 1, g 2, l 1, u 1, h 2, o 1, c 1}
+{d 3, n 1, w 2, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1}
+{d 2, n 2, z 1, w 1, e 1, q 1, p 1, j 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, s 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 2, k 1, b 1, r 1, y 2, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, w 2, s 1, f 1, e 2, q 1, p 1, j 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, s 2, f 1, e 1, p 2, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, l 1, u 2, h 1, o 1, c 1}
+{d 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 2, k 1, b 1, r 1, y 1, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 2, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, f 1, e 2, p 2, j 1, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, o 2}
+{n 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 2, m 2, c 1}
+{d 1, n 1, z 1, w 2, f 1, e 1, q 2, p 2, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{d 1, n 1, w 1, s 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, l 2, u 1, h 1, m 1, o 2, c 1}
+{d 1, z 1, w 1, s 1, f 1, e 1, q 1, p 2, j 3, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{d 1, z 3, w 1, s 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, c 1}
+{n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 2, k 1, b 1, y 1, g 2, l 1, u 1, h 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, t 1, i 1, b 1, r 1, y 2, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, y 1, l 2, u 2, h 1, m 2, c 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 2, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, h 2, m 1, c 1}
+{d 1, z 1, w 1, s 2, f 1, e 1, q 1, p 1, j 1, x 1, v 2, a 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 2, t 1, i 1, k 1, y 1, g 1, u 1, h 1, m 2, o 1, c 1}
+{d 2, n 1, z 1, w 1, s 1, e 2, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, r 1, y 1, g 1, l 1, h 1, m 1, o 2, c 1}
+{n 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 2, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, z 1, w 1, s 2, f 1, e 2, q 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, q 2, p 2, j 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, e 1, q 1, p 1, x 1, v 1, a 2, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 2, s 1, f 1, e 1, q 1, x 1, v 1, a 1, t 1, i 1, k 1, b 2, r 1, g 1, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 1, q 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, y 1, g 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 2, n 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, x 1, v 1, t 2, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, q 2, p 2, j 1, x 1, a 1, t 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 2, y 1, g 1, l 1, u 1, h 2, o 2}
+{d 1, n 1, w 1, s 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, s 1, e 1, q 2, p 1, j 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 2, o 1, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 3, o 1, c 1}
+{d 1, n 1, z 2, w 1, s 1, f 1, q 1, p 1, j 1, x 1, v 2, a 1, t 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, s 3, f 2, e 1, q 1, p 1, v 1, a 1, t 1, i 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 2, y 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 2, z 2, w 1, s 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, b 1, r 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 2, l 1, u 2, h 1, m 1, c 1}
+{d 1, n 1, z 2, w 1, s 1, f 1, e 1, q 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, o 2}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 2, k 1, b 1, y 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, t 2, b 1, r 1, y 1, g 2, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 2, q 1, p 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 2, g 1, u 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 2, a 1, t 1, k 1, b 1, r 1, y 1, g 1, l 2, u 1, h 2, o 1, c 1}
+{n 1, z 1, w 1, f 1, e 1, q 1, p 1, x 1, v 1, a 2, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, v 1, a 2, t 2, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, m 1, c 1}
+{z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1, c 1}
+{d 1, n 1, w 2, s 1, f 1, e 1, q 1, p 2, j 1, x 1, a 2, t 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 2, z 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, h 1, m 1, c 1}
+{d 1, n 2, w 2, s 1, e 1, q 1, p 1, j 1, x 1, a 2, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 2, r 1, y 1, g 2, l 1, u 1, m 1, o 1, c 1}
+{d 1, n 1, w 1, s 1, f 1, e 1, p 1, j 1, x 1, v 1, a 1, t 2, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 3, m 1, o 1, c 1}
+{z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, v 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 2, b 1, r 1, y 1, g 1, l 1, u 1, h 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, q 1, p 1, j 1, x 1, v 1, a 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, m 2, o 2, c 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 2, b 1, r 1, y 1, g 2, u 1, h 1, o 1, c 1}
+{d 1, z 1, w 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 2, t 1, i 1, k 1, b 1, r 1, y 1, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 3, x 1, v 1, t 2, i 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 2, x 1, a 1, t 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 2, a 2, t 1, i 1, k 1, y 1, g 1, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 2, n 1, z 2, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, i 1, k 1, b 1, r 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 2, e 1, q 1, p 1, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, s 1, f 2, e 1, q 1, p 1, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 2, s 1, f 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 2, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 2, j 1, x 1, v 1, a 1, t 1, i 1, b 1, r 2, y 1, g 1, l 1, u 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 1, o 1}
+{d 1, n 1, z 1, w 2, s 1, f 1, e 1, q 2, p 1, j 1, x 1, a 1, t 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, o 2, c 1}
+{d 1, z 1, w 1, s 1, e 1, q 1, p 1, j 2, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, k 1, b 2, r 1, y 1, g 1, l 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, v 1, a 1, t 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 3, m 1, o 1, c 1}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, k 1, b 1, y 1, g 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, z 1, w 2, s 1, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{n 1, z 1, w 1, s 1, f 2, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, w 2, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, i 1, k 1, b 1, r 1, g 1, l 2, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 2, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 2, s 1, f 1, e 1, p 1, j 1, x 1, v 2, a 1, t 1, i 1, b 1, r 1, y 1, g 1, l 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, p 1, j 3, x 2, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 1, m 1, c 1}
+{d 1, n 1, w 1, s 3, f 1, e 1, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, k 1, r 1, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, s 1, f 1, e 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 2, r 1, y 1, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 2, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 2, k 1, b 1, r 1, y 1, u 2, h 1, m 1, o 1, c 1}
+{d 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 2, b 1, r 1, y 1, g 1, l 2, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, q 1, p 1, j 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, y 2, g 1, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 2, z 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 2, g 1, l 1, u 1, m 1, o 1, c 2}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, k 2, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, t 1, i 2, r 1, y 1, g 1, l 1, u 1, h 1, m 2, o 1}
+{d 2, n 1, z 1, w 1, f 1, e 1, q 1, p 1, x 1, v 1, a 1, t 1, i 1, b 1, r 1, y 2, g 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, i 1, k 1, b 1, r 1, g 1, u 1, h 1, m 2, o 2, c 1}
+{n 1, z 2, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, r 1, y 1, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, t 1, i 1, r 1, y 2, g 1, l 1, u 2, h 1, m 1, o 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 2, q 1, p 1, j 1, x 2, v 1, a 1, t 1, i 1, k 1, r 1, y 1, g 2, u 1, h 1, o 1, c 1}
+{d 1, n 1, w 2, s 1, f 2, e 1, p 1, j 1, x 1, v 1, t 2, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, g 2, l 1, u 1, h 1, m 1, o 2, c 2}
+{d 1, n 1, z 1, s 1, f 1, e 1, q 1, p 1, j 2, x 1, v 1, a 1, i 1, k 1, b 2, y 1, g 1, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, z 1, w 1, s 1, f 2, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 2, u 1, h 1, m 1, o 1}
+{z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, t 2, i 1, b 1, r 2, y 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 1, k 2, b 1, r 1, y 1, g 2, l 1, u 1, h 2, m 1, o 1}
+{d 2, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, a 1, t 1, k 1, r 1, y 1, g 2, l 1, u 1, h 1, m 1, o 2, c 1}
+{d 3, z 1, w 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 2, l 1, u 1, h 1, m 1, o 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, x 1, v 1, a 2, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, m 1, o 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 2, j 2, v 1, a 1, t 1, i 2, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 1, t 1, k 2, r 1, y 1, l 1, u 2, h 1, m 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, p 1, j 1, x 1, v 2, a 1, i 1, k 1, b 1, y 1, g 2, l 1, u 1, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 1, s 1, e 1, q 2, p 1, j 1, x 1, v 1, a 1, t 3, i 1, k 1, b 1, r 1, y 1, g 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 2, z 1, w 1, s 1, f 1, e 2, q 1, j 2, x 1, v 1, a 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{n 1, z 1, w 1, s 1, f 1, e 1, q 3, p 2, x 1, v 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 1, m 1, o 1, c 1}
+{d 1, n 1, z 2, w 1, s 1, f 1, e 1, q 2, p 1, x 1, a 1, t 1, i 1, k 1, b 1, r 1, g 1, l 1, u 1, h 1, m 1, o 1, c 2}
+{d 1, n 1, z 1, w 1, s 1, e 1, q 1, p 1, j 1, x 1, v 1, t 1, i 1, k 1, b 1, r 1, y 1, g 2, l 2, u 1, h 1, m 1, o 1, c 1}
+{d 1, z 1, w 1, s 1, f 1, e 1, q 1, p 1, j 1, x 1, v 1, a 2, t 2, i 1, k 1, b 1, r 1, y 1, l 1, u 1, h 1, o 2, c 1}
+{d 1, n 1, z 1, w 1, f 1, e 1, q 1, j 2, x 1, v 1, a 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 2, h 1, m 2, o 1, c 1}
+{d 1, n 1, z 1, w 1, s 1, f 1, e 1, q 1, p 2, x 1, v 1, a 1, i 2, k 1, b 1, r 2, y 1, g 1, l 1, u 1, m 1, o 1, c 1}
+{n 1, z 1, w 1, s 1, f 1, e 1, q 2, p 1, j 1, x 1, v 2, a 1, t 1, i 1, k 1, b 1, r 1, y 1, g 1, l 1, u 1, h 1, o 2}
+nil
+clj꞉AoC-2꞉> 
+249
+clj꞉AoC-2꞉> 
+6972
+clj꞉AoC-2꞉> 

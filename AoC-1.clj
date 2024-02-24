@@ -4,7 +4,7 @@
 ;;1
 (def read-num
   (->>
-   (str/split (read-line) #" ")
+   (str/split (slurp "input-1.txt") #"\r\n")
    (map #(Integer/parseInt %))))
 
 (reduce + read-num)
