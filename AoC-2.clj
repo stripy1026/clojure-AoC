@@ -9,24 +9,17 @@
    (map #(str/split % #""))))
 
 (defn findfrq [strlst]
-     (loop [chars strlst
-            nums {}]
-       (if (first chars)
-         (if (contains? nums (first chars))
-           (recur (next chars) (update-in nums [(first chars)] inc))
-           (recur (next chars) (assoc nums (first chars) 1)))
-         nums)))
+  (let [frq (reduce
+         (fn [nums char]
+           (update-in nums [char] (fnil inc 0)))
+         {} strlst)]
+    [(if (some #(= % 2) (vals frq)) 1 0) (if (some #(= % 3) (vals frq)) 1 0)]))
 
-(loop [reading read-str 
-       two 0
-       three 0] 
-  (if (first reading)
-    (let [frq (findfrq (first reading))]
-      (if (and (some #(= % 2) (vals frq)) (some #(= % 3) (vals frq)))
-        (recur (next reading) (inc two) (inc three))
-        (if (some #(= % 2) (vals frq))
-          (recur (next reading) (inc two) three)
-          (if (some #(= % 3) (vals frq))
-            (recur (next reading) two (inc three))
-            (recur (next reading) two three)))))
-    (* two three)))
+(->>
+ read-str
+ (reduce 
+  (fn [res reading]  
+    (let [frq (findfrq reading)]  
+      (map + res frq)))  
+  [0 0])
+ (reduce *))
